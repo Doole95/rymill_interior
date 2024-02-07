@@ -1,12 +1,12 @@
 "vertexlitgeneric"
 {
 	"$additive" 1
-	"$basetexture" "models\dalliias\rymill\consolelights"
+	"$basetexture" "models\dalliias\rymill\consolelightsanim"
 	"$selfillum" "1"
-	"$selfillummask" "models\dalliias\rymill\consolelights"
+
 	"$envmap" "models/doctormemes/hurt/environment"
 	"$color2" "[ 1 1 1 ]"
-	"$envmaptint" "[ 0.2 0.2 0.2 ]"
+	"$envmaptint" "[ 0.3 0.3 0.3 ]"
 	"$nocull" "1"
 	"$nodecal" "1"
 	"$surfaceprop" "glass"
@@ -18,7 +18,7 @@
 	{
 	"animatedTextureVar" "$basetexture"
 	"animatedTextureFrameNumVar" "$frame"
-	"animatedTextureFrameRate" "24"
+	"animatedTextureFrameRate" "8"
 	}
 	}
 }
