@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/dalliias/whittagann/whittagann_base_Base_colorao"
+
+	"$surfaceprop" "Wood"
+
+	"$envmap" "models/dalliias/whittagann/environment"
+	"$envmaptint" "[0.1 0.1 0.1]"
+
+	"$bumpmap" "models/dalliias/whittagann/whittagann_base_Normal"
+
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+	
+}
+
+
+
+
+

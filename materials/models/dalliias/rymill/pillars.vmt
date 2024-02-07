@@ -1,0 +1,21 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\pillars_Base_color"
+	"$bumpmap" "models\dalliias\rymill\pillars_Normal"
+
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/Rough_ENV"
+	"$envmaptint" "[0.1 0.1 0.1]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "1"
+}
+
+
+
+
+

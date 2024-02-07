@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\corridordoors_Base_color"
+	"$bumpmap" "models\dalliias\rymill\corridordoors_Normal"
+	"$normalmap" "models\dalliias\rymill\corridordoors_Roughness"
+
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/environment"
+	"$envmaptint" "[0.2 0.2 0.2]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "1"
+}
+
+
+
+
+

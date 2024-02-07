@@ -1,0 +1,14 @@
+"vertexlitgeneric"
+{
+	"$additive" 1
+	"$basetexture" "models\dalliias\rymill\control_blue"
+	"$envmap" "models/doctormemes/hurt/environment"
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\control_blue"
+
+	"$envmaptint" "[ 0.2 0.2 0.2 ]"
+	"$nocull" "1"
+	"$nodecal" "1"
+	"$surfaceprop" "glass"
+
+}

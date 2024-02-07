@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/dalliias/whittagann/whittagann_lamp_Base_colorao"
+
+	"$surfaceprop" "Wood"
+
+	"$envmap" "models/dalliias/whittagann/Rough_ENV"
+	"$envmaptint" "[0.9 0.9 0.9]"
+
+	"$bumpmap" "models/dalliias/whittagann/whittagann_lamp_Normal"
+
+	"$nodecal" "0"
+}
+
+
+
+
+

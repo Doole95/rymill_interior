@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\pillar_lights_Emissive"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\pillar_lights_Emissive"
+
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmaptint" "[0.5 0.5 0.5]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "1"
+}

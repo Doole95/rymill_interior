@@ -1,0 +1,24 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/dalliias/whittagann/whittagann_window_Base_color5"
+
+	"$surfaceprop" "Wood"
+
+	"$envmap" "models/dalliias/whittagann/Rough_ENV"
+	"$envmaptint" "[0.9 0.9 0.9]"
+
+	"$selfillum" 1
+	"$selfillummask" "models/dalliias/whittagann/whittagann_window_emission"
+
+	"$phong" 1
+	"$phongboost" "0.1"
+	"$phongexponent" 1
+
+	"$nodecal" "1"
+
+	"$surfaceprop" "Glass"
+}
+
+
+
+

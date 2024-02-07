@@ -1,0 +1,25 @@
+"vertexlitgeneric"
+{
+	"$additive" 1
+	"$basetexture" "models\dalliias\rymill\control_lightblue"
+	"$envmap" "models/doctormemes/hurt/environment"
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\control_lightblue"
+
+	"Proxies"
+	{
+	"AnimatedTexture"
+	{
+	"animatedTextureVar" "$basetexture"
+	"animatedTextureFrameNumVar" "$frame"
+	"animatedTextureFrameRate" "24"
+	}
+	}
+
+
+	"$envmaptint" "[ 0.2 0.2 0.2 ]"
+	"$nocull" "1"
+	"$nodecal" "1"
+	"$surfaceprop" "glass"
+
+}
