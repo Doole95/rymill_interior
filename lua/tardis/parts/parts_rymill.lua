@@ -109,6 +109,16 @@ PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
+local PART={}
+PART.ID = "squarerows_rymill"
+PART.Name = "squarerows"
+PART.Model = "models/dalliias/whittagann/squarerows.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
 local PART = {}
 PART.ID = "rymill_vol_light"
 PART.Name = "Rymill Volumetric Light 1"

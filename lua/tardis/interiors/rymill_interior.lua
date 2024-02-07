@@ -286,6 +286,7 @@ T.Interior={
         doorway_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		consolelights_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		linesreader_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
+		squarerows_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 
 		-- Controls
         rymill_throttle = {pos=Vector(0,12,0), ang=Angle(0,90,0)},
@@ -360,10 +361,10 @@ T.Exterior={
 	},
 	Sounds = {
 		Teleport = {
-			demat = "molda/tuco/dematext.wav",
+			--demat = "molda/tuco/dematext.wav",
 --			demat_demaged = 
 --			demat_fail = 
-			mat = "molda/tuco/matext.wav"
+			--mat = "molda/tuco/matext.wav"
 --			mat_demaged = 
 --			mat_fail = 
 --			full_flight = 
@@ -441,6 +442,7 @@ T.Interior.TextureSets = {
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lights" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundles" },
 		{ "linesreader_rymill", 0, "linesreader" },
+		{ "squarerows_rymill", 0, "squarerows" },
     },
     ["flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -459,6 +461,7 @@ T.Interior.TextureSets = {
         { "self", 0, "floorneonwarn" },
         { "self", 2, "consolewhiteemitwarn"},
 		{ "linesreader_rymill", 0, "linesreaderwarning" },
+		{ "squarerows_rymill", 1, "squarerowswarning" },
     }
 }
 
