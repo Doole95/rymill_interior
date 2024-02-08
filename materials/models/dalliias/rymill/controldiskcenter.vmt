@@ -1,0 +1,26 @@
+"vertexlitgeneric"
+{
+	"$additive" 1
+	"$basetexture" "models\dalliias\rymill\controldisks"
+	"$selfillummask" "models\dalliias\rymill\controldisks"
+	"$selfillum" "1"
+
+	"$envmap" "models/doctormemes/hurt/environment"
+	"$color2" "[ 1 1 1 ]"
+	"$envmaptint" "[ 0.3 0.3 0.3 ]"
+	"$nocull" "1"
+	"$nodecal" "1"
+	"$surfaceprop" "glass"
+
+
+	"Proxies"
+	{
+	"AnimatedTexture"
+	{
+	"animatedTextureVar" "$basetexture"
+	"animatedTextureVar" "$selfillummask"
+	"animatedTextureFrameNumVar" "$frame"
+	"animatedTextureFrameRate" "24"
+	}
+	}
+}

@@ -147,6 +147,34 @@ PART.ShouldTakeDamage = true
 TARDIS:AddPart(PART)
 
 local PART = {}
+PART.ID = "rymill_controldisk"
+PART.Name = "Rymill Controldisk"
+PART.Model = "models/dalliias/whittagann/controldisk.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.Collision = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_controldisk2"
+PART.Name = "Rymill Controldisk2"
+PART.Model = "models/dalliias/whittagann/controldisk.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.Collision = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
 PART.ID = "rymill_handbreak"
 PART.Name = "Rymill handbreak"
 PART.Model = "models/dalliias/whittagann/starlevercontrol.mdl"

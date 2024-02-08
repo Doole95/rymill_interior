@@ -257,6 +257,7 @@ T.Interior={
 			rymill_cords = {pos = Vector(-62.56, -3.47, 36.51), down = true, right = true, text = "Coordinates",    },
 			rymill_leverswitch5 = {pos = Vector(-53.58, -16.33, 39.25), down = true, right = true, text = "Shields",    },
 			rymill_leverswitch4 = {pos = Vector(-54.91, -13.01, 38.79), down = true, right = true, text = "Manual Flight",    },
+			rymill_controldisk = {pos = Vector(-45.37, -42.58, 33.97), down = true, right = true, text = "Virtual Console",    },
 
         },
 
@@ -267,7 +268,8 @@ T.Interior={
 			rymill_shortflight  = "power",
 			rymill_cords  = "coordinates",
 			rymill_leverswitch5 = "shields",
-			rymill_leverswitch4 = "thirdperson"
+			rymill_leverswitch4 = "thirdperson",
+			rymill_controldisk = "virtualconsole"
 			
     	},
 
@@ -304,6 +306,8 @@ T.Interior={
 		rymill_leverswitch3 = {pos=Vector(2,-3,1), ang=Angle(0,90,0)},
 		rymill_leverswitch4 = {pos=Vector(2,-6.5,1), ang=Angle(0,90,0)},
 		rymill_leverswitch5 = {pos=Vector(2,-10,1), ang=Angle(0,90,0)},
+		rymill_controldisk = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
+		rymill_controldisk2 = {pos=Vector(32,-18,0), ang=Angle(0,90,0)},
 		
 
 		
@@ -443,6 +447,7 @@ T.Interior.TextureSets = {
 		{ "corridordoors_rymill", 1, "corridordoors_roundles" },
 		{ "linesreader_rymill", 0, "linesreader" },
 		{ "squarerows_rymill", 0, "squarerows" },
+		{ "controldisk_rymill", 3, "controldiskscenter" },
     },
     ["flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -462,6 +467,7 @@ T.Interior.TextureSets = {
         { "self", 2, "consolewhiteemitwarn"},
 		{ "linesreader_rymill", 0, "linesreaderwarning" },
 		{ "squarerows_rymill", 1, "squarerowswarning" },
+		{ "controldisk_rymill", 3, "controldiskcenterwarn" },
     }
 }
 
