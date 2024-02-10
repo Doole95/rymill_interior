@@ -317,6 +317,8 @@ T.Interior={
 		rymill_leverswitchsecond3 = {pos=Vector(-22.2,-38.3,42), ang=Angle(0,150,0)},
 		rymill_leverswitchsecond4 = {pos=Vector(-19.08,-40.2,42), ang=Angle(0,150,0)},
 		rymill_leverswitchsecond5 = {pos=Vector(-15.8,-42.05,42), ang=Angle(0,150,0)},
+		rymill_levercontrolleft = {pos=Vector(-35.04,-39,39), ang=Angle(0,150,0)},
+		rymill_levercontrolright = {pos=Vector(-17.1,-49.6,39), ang=Angle(0,150,0)},
 		
 
 		

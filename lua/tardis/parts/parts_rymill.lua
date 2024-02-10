@@ -467,3 +467,31 @@ PART.Sound = "rymill/rymill/button1.mp3"
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolleft"
+PART.Name = "rymill_levercontrol1"
+PART.Model = "models/dalliias/whittagann/levercontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolright"
+PART.Name = "rymill_levercontrol2"
+PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
