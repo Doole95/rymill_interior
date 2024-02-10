@@ -171,8 +171,9 @@ T.Interior={
                 color = Color(255, 20, 20)
             },
             off = {
-                color = Color(0, 51, 255),
-				brightness = 0,
+                color = Color(255, 255, 255),
+				brightness = 0.5,
+				fov = 60,
             },
 
             },
@@ -219,8 +220,8 @@ T.Interior={
 
         {color = 
 			Color(0, 51, 255),    
-			pos = Vector(0,0,50),    
-			brightness = 1,    
+			pos = Vector(0,0,80),    
+			brightness = 0.5,    
 			nopower = true 
 		},
         	
@@ -251,25 +252,27 @@ T.Interior={
     },
 
         PartTips = {
-            rymill_throttle = {pos = Vector(-52.27, 19.85, 36.78), down = true, right = true, text = "Throttle",    },
-			rymilla_handbreak = {pos = Vector(-53.73, 5.52, 37.87), down = true, right = true, text = "Handbreak",    },
-			rymill_shortflight = {pos = Vector(-59.06, 12.86, 38.45), down = true, right = true, text = "Short-Flight",    },
-			rymill_cords = {pos = Vector(-62.56, -3.47, 36.51), down = true, right = true, text = "Coordinates",    },
+            rymill_throttle = {pos = Vector(-61.2, 24.53, 35.69), down = true, right = true, text = "Throttle",    },
+			rymilla_handbreak = {pos = Vector(-62.12, 11.46, 35.34), down = true, right = true, text = "Handbreak",    },
+			rymill_shortflight = {pos = Vector(-63.06, 18.64, 37.82), down = true, right = true, text = "Short-Flight",    },
+			rymill_cords = {pos = Vector(-64.44, -5.37, 34.17), down = true, right = true, text = "Coordinates",    },
 			rymill_leverswitch5 = {pos = Vector(-53.58, -16.33, 39.25), down = true, right = true, text = "Shields",    },
-			rymill_leverswitch4 = {pos = Vector(-54.91, -13.01, 38.79), down = true, right = true, text = "Manual Flight",    },
+			rymill_controldisk2 = {pos = Vector(-17.53, -65.3, 37.84), down = true, right = true, text = "Manual Flight",    },
 			rymill_controldisk = {pos = Vector(-45.37, -42.58, 33.97), down = true, right = true, text = "Virtual Console",    },
+			rymill_powercontrol = {pos = Vector(-30.52, -52.68, 35.8), down = true, right = true, text = "Power",    },
 
         },
 
     	Controls = {
 
 			rymill_throttle  = "teleport",
-			rymill_handbreak  = "handbreak",
-			rymill_shortflight  = "power",
+			rymill_handbrake  = "handbrake",
+			rymill_shortflight  = "vortex_flight",
 			rymill_cords  = "coordinates",
 			rymill_leverswitch5 = "shields",
-			rymill_leverswitch4 = "thirdperson",
-			rymill_controldisk = "virtualconsole"
+			rymill_controldisk2 = "thirdperson",
+			rymill_controldisk = "virtualconsole",
+			rymill_powercontrol = "power"
 			
     	},
 
@@ -292,7 +295,7 @@ T.Interior={
 
 		-- Controls
         rymill_throttle = {pos=Vector(-3,18,-1), ang=Angle(0,90,0)},
-		rymill_handbreak = {pos=Vector(-3,5,-1), ang=Angle(0,90,0)},
+		rymill_handbrake = {pos=Vector(-3,5,-1), ang=Angle(0,90,0)},
 		rymill_shortflight = {pos=Vector(-5,5,-1), ang=Angle(0,90,0)},
 		rymill_cords = {pos=Vector(1,-2,0), ang=Angle(0,90,0)},
 		rymill_pianobutton1 = {pos=Vector(1,-5,0), ang=Angle(0,90,0)},
@@ -308,6 +311,12 @@ T.Interior={
 		rymill_leverswitch5 = {pos=Vector(2,-10,1), ang=Angle(0,90,0)},
 		rymill_controldisk = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		rymill_controldisk2 = {pos=Vector(32,-18,0), ang=Angle(0,90,0)},
+		rymill_powercontrol = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
+		rymill_leverswitchsecond1 = {pos=Vector(-28.7,-34.6,42), ang=Angle(0,150,0)},
+		rymill_leverswitchsecond2 = {pos=Vector(-25.5,-36.4,42), ang=Angle(0,150,0)},
+		rymill_leverswitchsecond3 = {pos=Vector(-22.2,-38.3,42), ang=Angle(0,150,0)},
+		rymill_leverswitchsecond4 = {pos=Vector(-19.08,-40.2,42), ang=Angle(0,150,0)},
+		rymill_leverswitchsecond5 = {pos=Vector(-15.8,-42.05,42), ang=Angle(0,150,0)},
 		
 
 		
@@ -446,7 +455,7 @@ T.Interior.TextureSets = {
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lights" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundles" },
 		{ "linesreader_rymill", 0, "linesreader" },
-		{ "squarerows_rymill", 0, "squarerows" },
+		{ "squarerows_rymill", 1, "squarerows" },
 		{ "controldisk_rymill", 3, "controldiskscenter" },
     },
     ["flight"] = {
@@ -469,6 +478,8 @@ T.Interior.TextureSets = {
 		{ "squarerows_rymill", 1, "squarerowswarning" },
 		{ "controldisk_rymill", 3, "controldiskcenterwarn" },
     }
+
+
 }
 
 T.Exterior.TextureSets = {
