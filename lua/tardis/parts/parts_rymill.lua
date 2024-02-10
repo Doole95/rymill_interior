@@ -119,6 +119,16 @@ PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
+local PART={}
+PART.ID = "consolesquares_rymill"
+PART.Name = "consolesquares"
+PART.Model = "models/dalliias/whittagann/consolesquares.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
 local PART = {}
 PART.ID = "rymill_vol_light"
 PART.Name = "Rymill Volumetric Light 1"
@@ -127,6 +137,8 @@ PART.AutoSetup = true
 PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
+
+
 
 
 -- CONTROLS 
@@ -470,7 +482,49 @@ TARDIS:AddPart(PART)
 
 local PART = {}
 PART.ID = "rymill_levercontrolleft"
-PART.Name = "rymill_levercontrol1"
+PART.Name = "rymill_levercontrolleft"
+PART.Model = "models/dalliias/whittagann/levercontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolleft2"
+PART.Name = "rymill_levercontrolleft2"
+PART.Model = "models/dalliias/whittagann/levercontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolleft3"
+PART.Name = "rymill_levercontrolleft3"
+PART.Model = "models/dalliias/whittagann/levercontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolleft4"
+PART.Name = "rymill_levercontrolleft4"
 PART.Model = "models/dalliias/whittagann/levercontrol.mdl"
 PART.AutoSetup = true
 PART.Collision = true
@@ -484,7 +538,7 @@ TARDIS:AddPart(PART)
 
 local PART = {}
 PART.ID = "rymill_levercontrolright"
-PART.Name = "rymill_levercontrol2"
+PART.Name = "rymill_levercontrolright"
 PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
 PART.AutoSetup = true
 PART.Collision = true
@@ -495,3 +549,74 @@ PART.Sound = "rymill/rymill/button1.mp3"
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolright2"
+PART.Name = "rymill_levercontrolright2"
+PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolright3"
+PART.Name = "rymill_levercontrolright3"
+PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolright4"
+PART.Name = "rymill_levercontrolright4"
+PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolright5"
+PART.Name = "rymill_levercontrolright5"
+PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_levercontrolright6"
+PART.Name = "rymill_levercontrolright6"
+PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+

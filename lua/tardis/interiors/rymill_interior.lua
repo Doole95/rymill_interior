@@ -292,6 +292,7 @@ T.Interior={
 		consolelights_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		linesreader_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		squarerows_rymill = {pos=Vector(-2,2,-1), ang=Angle(0,90,0)},
+		consolesquares_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 		-- Controls
         rymill_throttle = {pos=Vector(-3,18,-1), ang=Angle(0,90,0)},
@@ -318,7 +319,12 @@ T.Interior={
 		rymill_leverswitchsecond4 = {pos=Vector(-19.08,-40.2,42), ang=Angle(0,150,0)},
 		rymill_leverswitchsecond5 = {pos=Vector(-15.8,-42.05,42), ang=Angle(0,150,0)},
 		rymill_levercontrolleft = {pos=Vector(-35.04,-39,39), ang=Angle(0,150,0)},
-		rymill_levercontrolright = {pos=Vector(-17.1,-49.6,39), ang=Angle(0,150,0)},
+		rymill_levercontrolleft2 = {pos=Vector(-17.323,-38.145,42.842), ang=Angle(0,150,0)},
+		rymill_levercontrolleft3 = {pos=Vector(-10.028,-59.06,37.865), ang=Angle(0,30,0)},
+		rymill_levercontrolright = {pos=Vector(-20.504,-36.309,42.858), ang=Angle(0,30,0)},
+		rymill_levercontrolright2 = {pos=Vector(-21.052,37.885,42), ang=Angle(0,30,0)},
+		rymill_levercontrolright3 = {pos=Vector(-21.052,37.885,42), ang=Angle(0,30,0)},
+		rymill_levercontrolright4 = {pos=Vector(-7.188,-68.567,35.5), ang=Angle(0,30,0)},
 		
 
 		
