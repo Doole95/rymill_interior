@@ -590,35 +590,6 @@ T.CustomHooks = {
             ext:ApplyTextureSet(selected)
 		end
 
-
-
-
-
-
-
-
-
-        --    if vortex then
-        --        ext:ApplyTextureSet("vortex")
-        --    else
-        --        ext:ApplyTextureSet("normal")
-        --    end
-
-			
-			
-
-        --    if not power then
-        --        int:ApplyTextureSet("off")
-        --    else
-        --        if flight or teleport or vortex then
-        --            int:ApplyTextureSet("flight")
-        --        elseif warning then
-        --            int:ApplyTextureSet("warning")
-        --        else
-        --            int:ApplyTextureSet("normal")
-        --        end
-        --    end
-       -- end
     },
 
 	
