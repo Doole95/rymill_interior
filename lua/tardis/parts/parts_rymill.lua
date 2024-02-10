@@ -201,9 +201,9 @@ PART.ShouldTakeDamage = true
 TARDIS:AddPart(PART)
 
 local PART = {}
-PART.ID = "rymill_shortflight"
-PART.Name = "Rymill Shortflight"
-PART.Model = "models/dalliias/whittagann/shortflightcontrol.mdl"
+PART.ID = "rymill_togglebutton"
+PART.Name = "Rymill togglebutton"
+PART.Model = "models/dalliias/whittagann/togglebutton.mdl"
 PART.AutoSetup = true
 PART.UseTransparencyFix = true
 PART.Collision = true
@@ -455,6 +455,76 @@ TARDIS:AddPart(PART)
 local PART = {}
 PART.ID = "rymill_leverswitchsecond5"
 PART.Name = "rymill_leverswitchsecond5"
+PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_leverswitchsecond6"
+PART.Name = "rymill_leverswitchsecond6"
+PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_leverswitchsecond7"
+PART.Name = "rymill_leverswitchsecond7"
+PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_leverswitchsecond8"
+PART.Name = "rymill_leverswitchsecond8"
+PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_leverswitchsecond9"
+PART.Name = "rymill_leverswitchsecond9"
+PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_leverswitchsecond10"
+PART.Name = "rymill_leverswitchsecond10"
 PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
 PART.AutoSetup = true
 PART.Collision = true
