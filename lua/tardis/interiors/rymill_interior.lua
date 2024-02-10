@@ -160,7 +160,7 @@ T.Interior={
 
 
 
-            shadows = false,
+            shadows = true,
 
             nopower = true,
 
@@ -254,12 +254,14 @@ T.Interior={
         PartTips = {
             rymill_throttle = {pos = Vector(-61.2, 24.53, 35.69), down = true, right = true, text = "Throttle",    },
 			rymilla_handbreak = {pos = Vector(-62.12, 11.46, 35.34), down = true, right = true, text = "Handbreak",    },
-			rymill_shortflight = {pos = Vector(-63.06, 18.64, 37.82), down = true, right = true, text = "Short-Flight",    },
+			rymill_togglebutton = {pos = Vector(-63.06, 18.64, 37.82), down = true, right = true, text = "Short-Flight",    },
 			rymill_cords = {pos = Vector(-64.44, -5.37, 34.17), down = true, right = true, text = "Coordinates",    },
 			rymill_leverswitch5 = {pos = Vector(-53.58, -16.33, 39.25), down = true, right = true, text = "Shields",    },
 			rymill_controldisk2 = {pos = Vector(-17.53, -65.3, 37.84), down = true, right = true, text = "Manual Flight",    },
 			rymill_controldisk = {pos = Vector(-45.37, -42.58, 33.97), down = true, right = true, text = "Virtual Console",    },
 			rymill_powercontrol = {pos = Vector(-30.52, -52.68, 35.8), down = true, right = true, text = "Power",    },
+			rymill_leverswitchsecond7 = {pos = Vector(28.37, 36.27, 41.45), down = true, right = true, text = "Self-Repair",    },
+			rymill_leverswitchsecond1 = {pos = Vector(-29.34, -36.16, 41.37), down = true, right = true, text = "Flight",    },
 
         },
 
@@ -267,12 +269,14 @@ T.Interior={
 
 			rymill_throttle  = "teleport",
 			rymill_handbrake  = "handbrake",
-			rymill_shortflight  = "vortex_flight",
+			rymill_togglebutton  = "vortex_flight",
 			rymill_cords  = "coordinates",
 			rymill_leverswitch5 = "shields",
 			rymill_controldisk2 = "thirdperson",
 			rymill_controldisk = "virtualconsole",
-			rymill_powercontrol = "power"
+			rymill_powercontrol = "power",
+			rymill_leverswitchsecond7 ="repair",
+			rymill_leverswitchsecond1 ="flight"
 			
     	},
 
@@ -295,21 +299,23 @@ T.Interior={
 		consolesquares_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 		-- Controls
+		--PANEL1
         rymill_throttle = {pos=Vector(-3,18,-1), ang=Angle(0,90,0)},
 		rymill_handbrake = {pos=Vector(-3,5,-1), ang=Angle(0,90,0)},
-		rymill_shortflight = {pos=Vector(-5,5,-1), ang=Angle(0,90,0)},
+		rymill_togglebutton = {pos=Vector(-60.424,18.1,35.7), ang=Angle(0,90,0)},
 		rymill_cords = {pos=Vector(1,-2,0), ang=Angle(0,90,0)},
 		rymill_pianobutton1 = {pos=Vector(1,-5,0), ang=Angle(0,90,0)},
 		rymill_pianobutton2 = {pos=Vector(1,-8,0), ang=Angle(0,90,0)},
 		rymill_pianobutton3 = {pos=Vector(1,-11,0), ang=Angle(0,90,0)},
 		rymill_pianobutton4 = {pos=Vector(1,-14,0), ang=Angle(0,90,0)},
-		rymill_pianobutton5 = {pos=Vector(1,-17,0), ang=Angle(0,90,0)},
+		rymill_pianobutton5 = {pos=Vector(1,-17,0), ang=Angle(0,90,0)},--shields
 		rymill_pianobutton6 = {pos=Vector(1,-20,0), ang=Angle(0,90,0)},
 		rymill_leverswitch = {pos=Vector(2,4,1), ang=Angle(0,90,0)},
 		rymill_leverswitch2 = {pos=Vector(2,0.5,1), ang=Angle(0,90,0)},
 		rymill_leverswitch3 = {pos=Vector(2,-3,1), ang=Angle(0,90,0)},
 		rymill_leverswitch4 = {pos=Vector(2,-6.5,1), ang=Angle(0,90,0)},
 		rymill_leverswitch5 = {pos=Vector(2,-10,1), ang=Angle(0,90,0)},
+		--PANEL2
 		rymill_controldisk = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		rymill_controldisk2 = {pos=Vector(32,-18,0), ang=Angle(0,90,0)},
 		rymill_powercontrol = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
@@ -318,16 +324,28 @@ T.Interior={
 		rymill_leverswitchsecond3 = {pos=Vector(-22.2,-38.3,42), ang=Angle(0,150,0)},
 		rymill_leverswitchsecond4 = {pos=Vector(-19.08,-40.2,42), ang=Angle(0,150,0)},
 		rymill_leverswitchsecond5 = {pos=Vector(-15.8,-42.05,42), ang=Angle(0,150,0)},
-		rymill_levercontrolleft = {pos=Vector(-35.04,-39,39), ang=Angle(0,150,0)}, -- panel 2
-		rymill_levercontrolright = {pos=Vector(-17.19,-49.617,39), ang=Angle(0,150,0)}, --panel 2
-		rymill_levercontrolright2 = {pos=Vector(-21.05,37.885,41.5), ang=Angle(0,30,0)},--pannel 6
-		rymill_levercontrolright3 = {pos=Vector(-10.028,59.06,37), ang=Angle(0,30,0)},--pannel 6
-		rymill_levercontrolleft3 = {pos=Vector(-7.1887,68.567,35), ang=Angle(0,30,0)},--pannel 6
-		rymill_levercontrolright4 = {pos=Vector(17.323,38.145,42), ang=Angle(0,-30,0)},--pannel 5
-		rymill_levercontrolleft4 = {pos=Vector(20.504,36.309,42), ang=Angle(0,-30,0)},--pannel 5
-		rymill_levercontrolup = {pos=Vector(52.319,40.841,35.5), ang=Angle(0,-30,0)},--pannel 5
-		rymill_levercontroldown = {pos=Vector(53.911,43.919,34.3), ang=Angle(0,-30,0)},--pannel 5
-		
+		rymill_levercontrolleft = {pos=Vector(-35.04,-39,39), ang=Angle(0,150,0)},
+		rymill_levercontrolright = {pos=Vector(-17.19,-49.617,39), ang=Angle(0,150,0)},
+		--PANEL3
+
+		--PANEL4
+
+		--PANEL5
+		rymill_levercontrolright4 = {pos=Vector(17.323,38.145,42), ang=Angle(0,-30,0)},
+		rymill_levercontrolleft4 = {pos=Vector(20.504,36.309,42), ang=Angle(0,-30,0)},
+		rymill_levercontrolup = {pos=Vector(52.319,40.841,35.5), ang=Angle(0,-30,0)},
+		rymill_levercontroldown = {pos=Vector(53.911,43.919,34.3), ang=Angle(0,-30,0)},
+		rymill_leverswitchsecond7 = {pos=Vector(27.814,34.932,42), ang=Angle(0,-30,0)},
+		rymill_leverswitchsecond8 = {pos=Vector(32.653,43.312,38.8), ang=Angle(0,-30,0)},
+		rymill_leverswitchsecond9 = {pos=Vector(37.435,51.596,35.45), ang=Angle(0,-30,0)},
+		rymill_leverswitchsecond10 = {pos=Vector(33.692,53.758,35.45), ang=Angle(0,-30,0)},
+
+
+		--PANEL6
+		rymill_levercontrolright2 = {pos=Vector(-21.05,37.885,41.5), ang=Angle(0,30,0)},
+		rymill_levercontrolright3 = {pos=Vector(-10.028,59.06,37), ang=Angle(0,30,0)},
+		rymill_levercontrolleft3 = {pos=Vector(-7.1887,68.567,35), ang=Angle(0,30,0)},
+		rymill_leverswitchsecond6 = {pos=Vector(-9.857,48.671,41), ang=Angle(0,30,0)},		
 
 		
 		door = {
@@ -466,11 +484,16 @@ T.Interior.TextureSets = {
 		{ "corridordoors_rymill", 1, "corridordoors_roundles" },
 		{ "linesreader_rymill", 0, "linesreader" },
 		{ "squarerows_rymill", 1, "squarerows" },
-		{ "controldisk_rymill", 3, "controldiskscenter" },
+		{ "rymill_controldisk", 3, "controldiskscenter" },
+		{ "rymill_controldisk2", 3, "controldiskscenter" },
+		{ "rymill_controldisk", 2, "controls_green" },
+		{ "rymill_controldisk2", 2, "controls_green" },
+		{ "rymill_powercontrol", 2, "controls_green" },
     },
     ["flight"] = {
         prefix = "models/dalliias/rymill/",
         { "self", 14, "sequencelightson" },
+		{ "self", 1, "walls_roundles_inflight" },
     },
     ["off"] = {
         prefix = "models/dalliias/rymill/",
@@ -478,6 +501,7 @@ T.Interior.TextureSets = {
 		{ "pillars_rymill", 1, "pillar_lightsoff" },
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightsoff" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundlesoff" },
+		{ "rymill_powercontrol", 2, "controls_red" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",
@@ -486,7 +510,24 @@ T.Interior.TextureSets = {
         { "self", 2, "consolewhiteemitwarn"},
 		{ "linesreader_rymill", 0, "linesreaderwarning" },
 		{ "squarerows_rymill", 1, "squarerowswarning" },
-		{ "controldisk_rymill", 3, "controldiskcenterwarn" },
+		{ "rymill_controldisk", 3, "controldiskcenterwarn" },
+		{ "rymill_controldisk2", 3, "controldiskcenterwarn" },
+		{ "rymill_controldisk", 2, "controls_red" },
+		{ "rymill_controldisk2", 2, "controls_red" },
+		{ "self", 1, "walls_roundles_warning" },
+    },
+	["warning_flight"] = {
+        prefix = "models/dalliias/rymill/",
+        { "self", 14, "sequencelightswarn" },
+        { "self", 0, "floorneonwarn" },
+        { "self", 2, "consolewhiteemitwarn"},
+		{ "linesreader_rymill", 0, "linesreaderwarning" },
+		{ "squarerows_rymill", 1, "squarerowswarning" },
+		{ "rymill_controldisk", 3, "controldiskcenterwarn" },
+		{ "rymill_controldisk2", 3, "controldiskcenterwarn" },
+		{ "rymill_controldisk", 2, "controls_red" },
+		{ "rymill_controldisk2", 2, "controls_red" },
+		{ "self", 1, "walls_roundles_warning" },
     }
 
 
@@ -509,6 +550,7 @@ local TEXTURE_UPDATE_DATA_IDS = {
     ["teleport"] = true,
     ["vortex"] = true,
     ["flight"] = true,
+
 }
 
 
@@ -528,27 +570,58 @@ T.CustomHooks = {
             local vortex = ext:GetData("vortex")
             local power = ext:GetData("power-state")
             local warning = int:GetData("health-warning", false)
+			local active = flight or teleport or vortex
 
-            if vortex then
-                ext:ApplyTextureSet("vortex")
-            else
-                ext:ApplyTextureSet("normal")
-            end
+			local selected = "normal"
+
+			if warning and not power then
+				selected = "warning_off"
+			elseif not power then
+				selected = "poweroff"
+			elseif warning and active then
+				selected = "warning_flight"
+			elseif warning then
+				selected = "warning"
+			elseif active then
+				selected = "flight"
+			end
+
+			int:ApplyTextureSet(selected)
+            ext:ApplyTextureSet(selected)
+		end
+
+
+
+
+
+
+
+
+
+        --    if vortex then
+        --        ext:ApplyTextureSet("vortex")
+        --    else
+        --        ext:ApplyTextureSet("normal")
+        --    end
+
+			
 			
 
-            if not power then
-                int:ApplyTextureSet("off")
-            else
-                if flight or teleport or vortex then
-                    int:ApplyTextureSet("flight")
-                elseif warning then
-                    int:ApplyTextureSet("warning")
-                else
-                    int:ApplyTextureSet("normal")
-                end
-            end
-        end
+        --    if not power then
+        --        int:ApplyTextureSet("off")
+        --    else
+        --        if flight or teleport or vortex then
+        --            int:ApplyTextureSet("flight")
+        --        elseif warning then
+        --            int:ApplyTextureSet("warning")
+        --        else
+        --            int:ApplyTextureSet("normal")
+        --        end
+        --    end
+       -- end
     },
+
+	
 
 }
 T.Interior.CustomHooks = {

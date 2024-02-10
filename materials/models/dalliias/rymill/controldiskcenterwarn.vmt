@@ -2,7 +2,7 @@
 {
 	"$additive" 1
 	"$basetexture" "models\dalliias\rymill\controldiskswarning"
-	"$selfillummask" "models\dalliias\rymill\controldiskswarning"
+	"$selfillummask" "models\dalliias\rymill\controldisks_emission"
 	"$selfillum" "1"
 
 	"$envmap" "models/doctormemes/hurt/environment"
