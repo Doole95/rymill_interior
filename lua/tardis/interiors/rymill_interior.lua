@@ -333,6 +333,7 @@ T.Interior={
 		rymill_leverswitchsecond5 = {pos=Vector(-15.8,-42.05,42), ang=Angle(0,150,0)},
 		rymill_levercontrolleft = {pos=Vector(-35.04,-39,39), ang=Angle(0,150,0)},
 		rymill_levercontrolright = {pos=Vector(-17.19,-49.617,39), ang=Angle(0,150,0)},
+		
 		--PANEL3
 
 		--PANEL4
@@ -346,6 +347,8 @@ T.Interior={
 		rymill_leverswitchsecond8 = {pos=Vector(32.653,43.312,38.8), ang=Angle(0,-30,0)},
 		rymill_leverswitchsecond9 = {pos=Vector(37.435,51.596,35.45), ang=Angle(0,-30,0)},
 		rymill_leverswitchsecond10 = {pos=Vector(33.692,53.758,35.45), ang=Angle(0,-30,0)},
+		rymill_togglebutton2 = {pos=Vector(21.343,63.06,33.8), ang=Angle(0,-30,0)},
+		rymill_lenscontrol = {pos=Vector(10.48,36.561,44.1), ang=Angle(0,-30,0)},
 
 
 		--PANEL6
