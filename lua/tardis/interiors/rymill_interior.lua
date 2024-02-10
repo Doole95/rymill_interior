@@ -219,14 +219,21 @@ T.Interior={
         Lights = {
 
         {color = 
-			Color(0, 51, 255),    
+			Color(0, 51, 255),
+			warn_color=Color(255, 20, 20),
+			off_color=Color(0, 51, 255),
+			off_brightness= 0.1, 
 			pos = Vector(0,0,80),    
 			brightness = 0.5,    
 			nopower = true 
+			
 		},
         	
 		{color = 
-		Color(0, 51, 255),    
+		Color(0, 51, 255),
+		warn_color=Color(255, 20, 20),
+		off_color=Color(0, 51, 255),
+		off_brightness= 0.1,   
 		pos = Vector(-400, 0, 80),    
 		brightness  =  0.1,    
 		nopower = true
@@ -414,18 +421,18 @@ T.Exterior={
 		},
 		Door = {
 			enabled = true,
-			open = "molda/ruth/lqdoorsopen.wav",
-			close = "molda/ruth/lqdoorsclose.wav"
+		--	open = "molda/ruth/lqdoorsopen.wav",
+		--	close = "molda/ruth/lqdoorsclose.wav"
 --			locked =
 		},
-		FlightLoop = "molda/tuco/flight.wav",
+		--FlightLoop = "molda/tuco/flight.wav",
 --		FlightLoopDemaged = 
 --		Cloak =
 --		CloakOff =
 --		RepairFinish = 
-		Lock = "molda/ruth/lock.wav",
+	--	Lock = "molda/ruth/lock.wav",
 		Hum = {
-			path = "molda/ruth/interior.wav",
+			path = "rymill/rymill/hum.wav",
 			volume = 0.1
 		
 		}
@@ -577,7 +584,7 @@ T.CustomHooks = {
 			if warning and not power then
 				selected = "warning_off"
 			elseif not power then
-				selected = "poweroff"
+				selected = "off"
 			elseif warning and active then
 				selected = "warning_flight"
 			elseif warning then
@@ -590,35 +597,6 @@ T.CustomHooks = {
             ext:ApplyTextureSet(selected)
 		end
 
-
-
-
-
-
-
-
-
-        --    if vortex then
-        --        ext:ApplyTextureSet("vortex")
-        --    else
-        --        ext:ApplyTextureSet("normal")
-        --    end
-
-			
-			
-
-        --    if not power then
-        --        int:ApplyTextureSet("off")
-        --    else
-        --        if flight or teleport or vortex then
-        --            int:ApplyTextureSet("flight")
-        --        elseif warning then
-        --            int:ApplyTextureSet("warning")
-        --        else
-        --            int:ApplyTextureSet("normal")
-        --        end
-        --    end
-       -- end
     },
 
 	
