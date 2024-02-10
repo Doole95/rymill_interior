@@ -536,6 +536,21 @@ PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
 
+
+local PART = {}
+PART.ID = "rymill_levercontrolup"
+PART.Name = "rymill_levercontrolup"
+PART.Model = "models/dalliias/whittagann/levercontrol3.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
 local PART = {}
 PART.ID = "rymill_levercontrolright"
 PART.Name = "rymill_levercontrolright"
@@ -593,9 +608,9 @@ PART.ShouldTakeDamage = true
 TARDIS:AddPart(PART)
 
 local PART = {}
-PART.ID = "rymill_levercontrolright5"
-PART.Name = "rymill_levercontrolright5"
-PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
+PART.ID = "rymill_levercontroldown"
+PART.Name = "rymill_levercontroldown"
+PART.Model = "models/dalliias/whittagann/levercontrol4.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.UseTransparencyFix = true
@@ -605,18 +620,3 @@ PART.Sound = "rymill/rymill/button1.mp3"
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
-
-local PART = {}
-PART.ID = "rymill_levercontrolright6"
-PART.Name = "rymill_levercontrolright6"
-PART.Model = "models/dalliias/whittagann/levercontrol2.mdl"
-PART.AutoSetup = true
-PART.Collision = true
-PART.UseTransparencyFix = true
-PART.Animate = true
-PART.AnimateSpeed = 6
-PART.Sound = "rymill/rymill/button1.mp3"
-PART.ShouldTakeDamage = true
-
-TARDIS:AddPart(PART)
-
