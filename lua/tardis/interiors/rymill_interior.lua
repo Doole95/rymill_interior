@@ -221,7 +221,8 @@ T.Interior={
             nopower = true,
 
             warn = {
-                color = Color(255, 20, 20)
+                color = Color(255, 20, 20),
+				brightness = 0.5,
             },
             off_warn = {
                 color = Color(255, 20, 20)
