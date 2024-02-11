@@ -271,9 +271,8 @@ T.Interior={
 			rymill_rotationswitch3 = {pos = Vector(64.78, 13.7, 33.24), down = true, right = true, text = "Anti-Gravs",    },
 			rymill_rotationswitch4 = {pos = Vector(32.48, -52.52, 34.32), down = true, right = true, text = "H.A.D.S",    },
 			rymill_leverswitchsecond10 = {pos = Vector(38.34, 52.92, 34.85), down = true, right = true, text = "Fast Return",    },
-			rymill_levercontrolleft = {pos = Vector(64.53, -13.01, 33.33), down = true, right = true, text = "Engine Release",    },
+			rymill_leverswitch = {pos = Vector(-54.2, -2.07, 39.04), down = true, right = true, text = "Engine Release",    },
 			rymill_smallswitch1 = {pos = Vector(-21.52,  60.89,  33.36), down = true, right = true, text = "Spin Cycle",    },
-			rymill_smallswitch2 = {pos = Vector(-24.13,  59.28,  33.41), down = true, right = true, text = "Spin Toggle",    },
 			rymill_smallswitch3 = {pos = Vector(-26.57,  57.97,  33.37), down = true, right = true, text = "Spin Switch",    },
 			rymill_togglebutton2 = {pos = Vector(22.03, 64.93, 35.02), down = true, right = true, text = "Door Lock",    },
 			rymill_levercontrolright2 = {pos = Vector(-21.9, 39.39, 40.97), down = true, right = true, text = "Door",    },
@@ -282,16 +281,17 @@ T.Interior={
 			rymill_rotationswitch9 = {pos = Vector(48.12, -46.67, 33.35), down = true, right = true, text = "Redecorate",    },
 			rymill_dialreader2 = {pos = Vector(51.31, -16.05, 38.34), down = true, right = true, text = "Isomorphic",    },
 			rymill_smallswitch10 = {pos = Vector(64.5, 5.91, 33.33), down = true, right = true, text = "Exterior Light",    },
-			rymill_rotationswitch1 = {pos = Vector(26.52, -44.07, 38.3), down = true, right = true, text = "Phys-lock",    },
+			rymill_dialreader3 = {pos = Vector(26.52, -44.07, 38.3), down = true, right = true, text = "Phys-lock",    },
 			rymill_dialreader1 = {pos = Vector(50.88, 16.77, 38.48), down = true, right = true, text = "Music",    },
 			rymill_pianobutton9 = {pos = Vector(8.71, 69.31, 34.87), down = true, right = true, text = "Scanner",    },
+			rymill_leverswitchsecond13 = {pos = Vector(-52.12, 45.5, 34.69), down = true, right = true, text = "Toggle Console",    },
         },
 
     	Controls = {
 
 			rymill_throttle  = "teleport",
 			rymill_handbrake  = "handbrake",
-			rymill_togglebutton  = "vortex_flight",
+			rymill_togglebutton = "vortex_flight",
 			rymill_pianobutton2  = "coordinates",
 			rymill_leverswitch5 = "shields",
 			rymill_controldisk2 = "thirdperson",
@@ -302,20 +302,20 @@ T.Interior={
 			rymill_rotationswitch3 ="float",
 			rymill_rotationswitch4 ="hads",
 			rymill_leverswitchsecond9 ="fastreturn",
-			rymill_rotationswitch1 ="physlock",
-			rymill_levercontrolleft ="engine_release",
 			rymill_smallswitch1 ="spin_cycle",
-			rymill_smallswitch2 ="spin_toggle",
 			rymill_smallswitch3 ="spin_switch",
 			rymill_togglebutton2 ="doorlock",
 			rymill_levercontrolright2 ="door",
-			rymill_leverswitch6 ="cloak",
 			rymill_rotationswitch9 ="redecorate",
 			rymill_dialreader2 ="isomorphic",
 			rymill_smallswitch10 = "exterior_light",
-			rymill_rotationswitch1 = "toggle_console",
+			rymill_leverswitchsecond13 = "toggle_console",
 			rymill_dialreader1 = "music",
 			rymill_pianobutton9 ="scanner",
+			rymill_leverswitchsecond6 ="cloak",
+			rymill_leverswitch ="engine_release",
+			rymill_lenscontrol2 ="destination",
+			rymill_dialreader3 = "physlock",
 			
     	},
 
@@ -418,9 +418,16 @@ T.Interior={
 		rymill_smallswitch3 = {pos=Vector(-26.638,57.563,34.08), ang=Angle(0,30,0)},
 		rymill_smallswitch4 = {pos=Vector(-22.773,62.339,33.28), ang=Angle(0,30,0)},
 		rymill_smallswitch5 = {pos=Vector(-25.276,60.954,33.28), ang=Angle(0,30,0)},
-		rymill_smallswitch6 = {pos=Vector(-27.766,59.517,33.28), ang=Angle(0,30,0)},		
+		rymill_smallswitch6 = {pos=Vector(-27.766,59.517,33.28), ang=Angle(0,30,0)},
+		rymill_leverswitchsecond10 = {pos=Vector(-41.913,35.014,39.71), ang=Angle(0,30,0)},
+		rymill_leverswitchsecond11 = {pos=Vector(-45.004,48.259,35.136), ang=Angle(0,30,0)},
+		rymill_leverswitchsecond12 = {pos=Vector(-48.355,46.325,35.136), ang=Angle(0,30,0)},
+		rymill_leverswitchsecond13 = {pos=Vector(-51.69,44.399,35.136), ang=Angle(0,30,0)},
+		rymill_leverswitchsecond14 = {pos=Vector(-55.11,42.425,35.136), ang=Angle(0,30,0)},
 
-		
+
+
+
 		door = {
 			model = "models/dalliias/whittagann/exterior/doorsint.mdl",
 			posoffset = Vector(27,0,-49),
