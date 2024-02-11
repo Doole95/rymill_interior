@@ -373,6 +373,7 @@ T.Interior={
 		ringsensors_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		radiationscreen_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rotor_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rymill_faultlocator = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 
 		-- Controls

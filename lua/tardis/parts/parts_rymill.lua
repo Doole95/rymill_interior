@@ -200,7 +200,19 @@ end
 
 TARDIS:AddPart(PART)
 
+local PART = {}
+PART.ID = "rymill_faultlocator"
+PART.Name = "Rymill faultlocator"
+PART.Model = "models/dalliias/whittagann/faultlocator.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.Collision = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
 
+TARDIS:AddPart(PART)
 
 
 
