@@ -272,7 +272,7 @@ T.Interior={
 			rymill_rotationswitch4 = {pos = Vector(32.48, -52.52, 34.32), down = true, right = true, text = "H.A.D.S",    },
 			rymill_leverswitchsecond10 = {pos = Vector(38.34, 52.92, 34.85), down = true, right = true, text = "Fast Return",    },
 			rymill_leverswitch = {pos = Vector(-54.2, -2.07, 39.04), down = true, right = true, text = "Engine Release",    },
-			rymill_smallswitch1 = {pos = Vector(-21.52,  60.89,  33.36), down = true, right = true, text = "Spin Cycle",    },
+			rymill_starswitch1 = {pos = Vector(-21.52,  60.89,  33.36), down = true, right = true, text = "Spin Cycle",    },
 			rymill_smallswitch3 = {pos = Vector(-26.57,  57.97,  33.37), down = true, right = true, text = "Spin Switch",    },
 			rymill_togglebutton2 = {pos = Vector(22.03, 64.93, 35.02), down = true, right = true, text = "Door Lock",    },
 			rymill_levercontrolright2 = {pos = Vector(-21.9, 39.39, 40.97), down = true, right = true, text = "Door",    },
@@ -302,7 +302,7 @@ T.Interior={
 			rymill_rotationswitch3 ="float",
 			rymill_rotationswitch4 ="hads",
 			rymill_leverswitchsecond9 ="fastreturn",
-			rymill_smallswitch1 ="spin_cycle",
+			rymill_starswitch1 ="spin_cycle",
 			rymill_smallswitch3 ="spin_switch",
 			rymill_togglebutton2 ="doorlock",
 			rymill_levercontrolright2 ="door",
@@ -424,6 +424,7 @@ T.Interior={
 		rymill_leverswitchsecond12 = {pos=Vector(-48.355,46.325,35.136), ang=Angle(0,30,0)},
 		rymill_leverswitchsecond13 = {pos=Vector(-51.69,44.399,35.136), ang=Angle(0,30,0)},
 		rymill_leverswitchsecond14 = {pos=Vector(-55.11,42.425,35.136), ang=Angle(0,30,0)},
+		rymill_starswitch1 = {pos=Vector(-16.497,65.292,33.98), ang=Angle(0,30,0)},
 
 
 
