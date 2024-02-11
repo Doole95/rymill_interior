@@ -4,7 +4,7 @@
 
 	"$selfillum" "1"
 	"$selfillummask" "models\dalliias\rymill\walls_roundles_Emissive"
-
+	"&color2" "[1 1 1]"
 	"$surfaceprop" "concrete"
 
 	"$envmap" "models/dalliias/whittagann/RoughENV"

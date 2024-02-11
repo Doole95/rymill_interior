@@ -310,18 +310,18 @@ T.Interior={
         rymill_throttle = {pos=Vector(-3,18,-1), ang=Angle(0,90,0)},
 		rymill_handbrake = {pos=Vector(-3,5,-1), ang=Angle(0,90,0)},
 		rymill_togglebutton = {pos=Vector(-60.424,18.1,35.7), ang=Angle(0,90,0)},
-		rymill_cords = {pos=Vector(1,-2,0), ang=Angle(0,90,0)},
-		rymill_pianobutton1 = {pos=Vector(1,-5,0), ang=Angle(0,90,0)},
-		rymill_pianobutton2 = {pos=Vector(1,-8,0), ang=Angle(0,90,0)},
-		rymill_pianobutton3 = {pos=Vector(1,-11,0), ang=Angle(0,90,0)},
-		rymill_pianobutton4 = {pos=Vector(1,-14,0), ang=Angle(0,90,0)},
-		rymill_pianobutton5 = {pos=Vector(1,-17,0), ang=Angle(0,90,0)},--shields
-		rymill_pianobutton6 = {pos=Vector(1,-20,0), ang=Angle(0,90,0)},
+		rymill_pianobutton1 = {pos=Vector(-64.968,-3.354,34.8), ang=Angle(0,90,0)},
+		rymill_pianobutton2 = {pos=Vector(-64.968,-6.527,34.8), ang=Angle(0,90,0)},
+		rymill_pianobutton3 = {pos=Vector(-64.968,-9.668,34.8), ang=Angle(0,90,0)},
+		rymill_pianobutton4 = {pos=Vector(-64.968,-12.84,34.8), ang=Angle(0,90,0)},
+		rymill_pianobutton5 = {pos=Vector(-64.968,-15.92,34.8), ang=Angle(0,90,0)},
+		rymill_pianobutton6 = {pos=Vector(-64.968,-18.996,34.8), ang=Angle(0,90,0)},
+		rymill_pianobutton7 = {pos=Vector(-64.968,-22.009,34.8), ang=Angle(0,90,0)},
 		rymill_leverswitch = {pos=Vector(2,4,1), ang=Angle(0,90,0)},
 		rymill_leverswitch2 = {pos=Vector(2,0.5,1), ang=Angle(0,90,0)},
 		rymill_leverswitch3 = {pos=Vector(2,-3,1), ang=Angle(0,90,0)},
 		rymill_leverswitch4 = {pos=Vector(2,-6.5,1), ang=Angle(0,90,0)},
-		rymill_leverswitch5 = {pos=Vector(2,-10,1), ang=Angle(0,90,0)},
+		rymill_leverswitch5 = {pos=Vector(2,-10,1), ang=Angle(0,90,0)},--shields
 		--PANEL2
 		rymill_controldisk = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		rymill_controldisk2 = {pos=Vector(32,-18,0), ang=Angle(0,90,0)},
@@ -333,7 +333,9 @@ T.Interior={
 		rymill_leverswitchsecond5 = {pos=Vector(-15.8,-42.05,42), ang=Angle(0,150,0)},
 		rymill_levercontrolleft = {pos=Vector(-35.04,-39,39), ang=Angle(0,150,0)},
 		rymill_levercontrolright = {pos=Vector(-17.19,-49.617,39), ang=Angle(0,150,0)},
+		
 		--PANEL3
+		rymill_lenscontrol2 = {pos=Vector(10.732,-66.686,35.06), ang=Angle(0,-150,0)},
 
 		--PANEL4
 
@@ -346,6 +348,8 @@ T.Interior={
 		rymill_leverswitchsecond8 = {pos=Vector(32.653,43.312,38.8), ang=Angle(0,-30,0)},
 		rymill_leverswitchsecond9 = {pos=Vector(37.435,51.596,35.45), ang=Angle(0,-30,0)},
 		rymill_leverswitchsecond10 = {pos=Vector(33.692,53.758,35.45), ang=Angle(0,-30,0)},
+		rymill_togglebutton2 = {pos=Vector(21.343,63.06,33.8), ang=Angle(0,-30,0)},
+		rymill_lenscontrol = {pos=Vector(13.712,49.983,39.521), ang=Angle(0,-30,0)},
 
 
 		--PANEL6

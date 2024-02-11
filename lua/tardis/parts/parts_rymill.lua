@@ -215,6 +215,20 @@ PART.ShouldTakeDamage = true
 TARDIS:AddPart(PART)
 
 local PART = {}
+PART.ID = "rymill_togglebutton2"
+PART.Name = "Rymill togglebutton2"
+PART.Model = "models/dalliias/whittagann/togglebutton.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+PART.Collision = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
 PART.ID = "rymill_cords"
 PART.Name = "Rymill Cords"
 PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
@@ -301,6 +315,20 @@ TARDIS:AddPart(PART)
 local PART = {}
 PART.ID = "rymill_pianobutton6"
 PART.Name = "rymill_pianobutton6"
+PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_pianobutton7"
+PART.Name = "rymill_pianobutton7"
 PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
 PART.AutoSetup = true
 PART.Collision = true
@@ -681,6 +709,34 @@ local PART = {}
 PART.ID = "rymill_levercontroldown"
 PART.Name = "rymill_levercontroldown"
 PART.Model = "models/dalliias/whittagann/levercontrol4.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_lenscontrol"
+PART.Name = "rymill_lenscontrol"
+PART.Model = "models/dalliias/whittagann/lenscontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_lenscontrol2"
+PART.Name = "rymill_lenscontrol2"
+PART.Model = "models/dalliias/whittagann/lenscontrol.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.UseTransparencyFix = true
