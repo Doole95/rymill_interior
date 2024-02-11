@@ -207,7 +207,7 @@ T.Interior={
 			texture = "effects/flashlight/soft",
 			fov = 110,
 			distance = 200,
-			brightness = 1.5,
+			brightness = 1,
 			pos = Vector(0, 0, 120),
 			ang = Angle(90, 0, 0),
 
@@ -255,7 +255,7 @@ T.Interior={
 			Color(0, 51, 255),
 			warn_color=Color(255, 20, 20),
 			off_color=Color(0, 51, 200),
-			off_brightness= 0.05, 
+			off_brightness= 0.005, 
 			pos = Vector(80,0,120),    
 			brightness = 0.4,    
 			nopower = true 
