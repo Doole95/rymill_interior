@@ -262,7 +262,7 @@ T.Interior={
             rymill_throttle = {pos = Vector(-61.2, 24.53, 35.69), down = true, right = true, text = "Throttle",    },
 			rymilla_handbreak = {pos = Vector(-62.12, 11.46, 35.34), down = true, right = true, text = "Handbreak",    },
 			rymill_togglebutton = {pos = Vector(-63.06, 18.64, 37.82), down = true, right = true, text = "Short-Flight",    },
-			rymill_cords = {pos = Vector(-64.44, -5.37, 34.17), down = true, right = true, text = "Coordinates",    },
+			rymill_pianobutton2 = {pos = Vector(-64.44, -5.37, 34.17), down = true, right = true, text = "Coordinates",    },
 			rymill_leverswitch5 = {pos = Vector(-53.58, -16.33, 39.25), down = true, right = true, text = "Shields",    },
 			rymill_controldisk2 = {pos = Vector(-17.53, -65.3, 37.84), down = true, right = true, text = "Manual Flight",    },
 			rymill_controldisk = {pos = Vector(-45.37, -42.58, 33.97), down = true, right = true, text = "Virtual Console",    },
@@ -277,7 +277,7 @@ T.Interior={
 			rymill_throttle  = "teleport",
 			rymill_handbrake  = "handbrake",
 			rymill_togglebutton  = "vortex_flight",
-			rymill_cords  = "coordinates",
+			rymill_pianobutton2  = "coordinates",
 			rymill_leverswitch5 = "shields",
 			rymill_controldisk2 = "thirdperson",
 			rymill_controldisk = "virtualconsole",
@@ -301,9 +301,11 @@ T.Interior={
         internaldoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         doorway_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		consolelights_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
-		linesreader_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
+		linesreader_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		squarerows_rymill = {pos=Vector(-2,2,-1), ang=Angle(0,90,0)},
 		consolesquares_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		consolegrid_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		ringsensors_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 
 		-- Controls
 		--PANEL1
@@ -350,13 +352,20 @@ T.Interior={
 		rymill_leverswitchsecond10 = {pos=Vector(33.692,53.758,35.45), ang=Angle(0,-30,0)},
 		rymill_togglebutton2 = {pos=Vector(21.343,63.06,33.8), ang=Angle(0,-30,0)},
 		rymill_lenscontrol = {pos=Vector(13.712,49.983,39.521), ang=Angle(0,-30,0)},
-
+		rymill_pianobutton8 = {pos=Vector(11.406,68.364,34.447), ang=Angle(0,-30,0)},
+		rymill_pianobutton9 = {pos=Vector(8.979,69.765,34.447), ang=Angle(0,-30,0)},
 
 		--PANEL6
 		rymill_levercontrolright2 = {pos=Vector(-21.05,37.885,41.5), ang=Angle(0,30,0)},
 		rymill_levercontrolright3 = {pos=Vector(-10.028,59.06,37), ang=Angle(0,30,0)},
 		rymill_levercontrolleft3 = {pos=Vector(-7.1887,68.567,35), ang=Angle(0,30,0)},
-		rymill_leverswitchsecond6 = {pos=Vector(-9.857,48.671,41), ang=Angle(0,30,0)},		
+		rymill_leverswitchsecond6 = {pos=Vector(-9.857,48.671,41), ang=Angle(0,30,0)},
+		rymill_smallswitch1 = {pos=Vector(-21.646,60.446,34.08), ang=Angle(0,30,0)},
+		rymill_smallswitch2 = {pos=Vector(-24.148,59.001,34.08), ang=Angle(0,30,0)},
+		rymill_smallswitch3 = {pos=Vector(-26.638,57.563,34.08), ang=Angle(0,30,0)},
+		rymill_smallswitch4 = {pos=Vector(-22.773,62.339,33.28), ang=Angle(0,30,0)},
+		rymill_smallswitch5 = {pos=Vector(-25.276,60.954,33.28), ang=Angle(0,30,0)},
+		rymill_smallswitch6 = {pos=Vector(-27.766,59.517,33.28), ang=Angle(0,30,0)},		
 
 		
 		door = {

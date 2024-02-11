@@ -129,11 +129,31 @@ PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
+local PART={}
+PART.ID = "consolegrid_rymill"
+PART.Name = "consolegrid"
+PART.Model = "models/dalliias/whittagann/consolegrid.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
 local PART = {}
 PART.ID = "rymill_vol_light"
 PART.Name = "Rymill Volumetric Light 1"
 PART.Model = "models/effects/vol_light128x256.mdl"
 PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART={}
+PART.ID = "ringsensors_rymill"
+PART.Name = "ringsensors"
+PART.Model = "models/dalliias/whittagann/ringsensors.mdl"
+PART.AutoSetup = true
+PART.Collision = true
 PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
@@ -329,6 +349,34 @@ TARDIS:AddPart(PART)
 local PART = {}
 PART.ID = "rymill_pianobutton7"
 PART.Name = "rymill_pianobutton7"
+PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_pianobutton8"
+PART.Name = "rymill_pianobutton8"
+PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_pianobutton9"
+PART.Name = "rymill_pianobutton9"
 PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
 PART.AutoSetup = true
 PART.Collision = true
@@ -737,6 +785,118 @@ local PART = {}
 PART.ID = "rymill_lenscontrol2"
 PART.Name = "rymill_lenscontrol2"
 PART.Model = "models/dalliias/whittagann/lenscontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch1"
+PART.Name = "rymill_smallswitch1"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch1"
+PART.Name = "rymill_smallswitch1"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch1"
+PART.Name = "rymill_smallswitch1"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch2"
+PART.Name = "rymill_smallswitch2"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch3"
+PART.Name = "rymill_smallswitch3"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch4"
+PART.Name = "rymill_smallswitch4"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch5"
+PART.Name = "rymill_smallswitch5"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_smallswitch6"
+PART.Name = "rymill_smallswitch6"
+PART.Model = "models/dalliias/whittagann/smallswitch.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.UseTransparencyFix = true
