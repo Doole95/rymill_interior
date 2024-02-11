@@ -327,6 +327,20 @@ PART.ShouldTakeDamage = true
 TARDIS:AddPart(PART)
 
 local PART = {}
+PART.ID = "rymill_pianobutton7"
+PART.Name = "rymill_pianobutton7"
+PART.Model = "models/dalliias/whittagann/pianoswitchcontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
 PART.ID = "rymill_leverswitch"
 PART.Name = "rymill_leverswitch"
 PART.Model = "models/dalliias/whittagann/leverswitchcontrol.mdl"
@@ -708,6 +722,20 @@ TARDIS:AddPart(PART)
 local PART = {}
 PART.ID = "rymill_lenscontrol"
 PART.Name = "rymill_lenscontrol"
+PART.Model = "models/dalliias/whittagann/lenscontrol.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_lenscontrol2"
+PART.Name = "rymill_lenscontrol2"
 PART.Model = "models/dalliias/whittagann/lenscontrol.mdl"
 PART.AutoSetup = true
 PART.Collision = true
