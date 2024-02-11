@@ -1279,3 +1279,17 @@ PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
 
+local PART = {}
+PART.ID = "rymill_starswitch1"
+PART.Name = "rymill_starswitch1"
+PART.Model = "models/dalliias/whittagann/starswitch.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
