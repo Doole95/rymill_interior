@@ -27,12 +27,6 @@ T.Interior={
 		},
 
 	},
-	Light={
-		enabled=true,
-		color=Color(0, 153, 255),
-		pos=Vector(0,0,180),
-		brightness=2
-	}, 
 
 	Lamps = {
         room_lamp1 = {
@@ -208,23 +202,62 @@ T.Interior={
             },
 
         },
+		room_lamp7 = {
+            color = Color(20, 51, 110),
+			texture = "effects/flashlight/soft",
+			fov = 110,
+			distance = 200,
+			brightness = 1.5,
+			pos = Vector(0, 0, 120),
+			ang = Angle(90, 0, 0),
+
+
+
+
+
+
+            shadows = true,
+
+            nopower = true,
+
+            warn = {
+                color = Color(255, 20, 20),
+				brightness = 0.5,
+            },
+            off_warn = {
+                color = Color(255, 20, 20)
+            },
+            off = {
+                color = Color(0, 51, 255),
+				brightness = 0,
+            },
+
+        },
 
 },
 
+	Light={
+		enabled=true,
+		color = Color(0, 153, 255),
+		pos = Vector(0,0,200),
+		brightness=0
+	}, 
+
 
     LightOverride = {
-        basebrightness = 0.01,
-        nopowerbrightness = 0
+		color=Color(0, 153, 255),
+        basebrightness = 0.005,
+        nopowerbrightness = 0.001
     },
         Lights = {
 
         {color = 
 			Color(0, 51, 255),
 			warn_color=Color(255, 20, 20),
-			off_color=Color(0, 51, 255),
-			off_brightness= 0.1, 
-			pos = Vector(0,0,80),    
-			brightness = 0.5,    
+			off_color=Color(0, 51, 200),
+			off_brightness= 0.05, 
+			pos = Vector(80,0,120),    
+			brightness = 0.4,    
 			nopower = true 
 			
 		},
@@ -233,9 +266,9 @@ T.Interior={
 		Color(0, 51, 255),
 		warn_color=Color(255, 20, 20),
 		off_color=Color(0, 51, 255),
-		off_brightness= 0.1,   
-		pos = Vector(-400, 0, 80),    
-		brightness  =  0.1,    
+		off_brightness= 0.005,   
+		pos = Vector(-90, 0, 80),    
+		brightness  =  0.4,    
 		nopower = true
 		},
 
@@ -251,7 +284,7 @@ T.Interior={
 
     TipSettings = {
            style = "MCCC",
-           view_range_max = 70,
+           view_range_max = 90,
            view_range_min = 60,
            TextOverrides = {
            ["console switch"] = "Roleplay Setting",
@@ -260,7 +293,7 @@ T.Interior={
 
         PartTips = {
             rymill_throttle = {pos = Vector(-61.2, 24.53, 35.69), down = true, right = true, text = "Throttle",    },
-			rymilla_handbreak = {pos = Vector(-62.12, 11.46, 35.34), down = true, right = true, text = "Handbreak",    },
+			rymilla_handbreak = {pos = Vector(-62.12, 11.46, 35.34), down = true, right = true, text = "Handbrake",    },
 			rymill_togglebutton = {pos = Vector(-63.06, 18.64, 37.82), down = true, right = true, text = "Short-Flight",    },
 			rymill_pianobutton2 = {pos = Vector(-64.44, -5.37, 34.17), down = true, right = true, text = "Coordinates",    },
 			rymill_leverswitch5 = {pos = Vector(-53.58, -16.33, 39.25), down = true, right = true, text = "Shields",    },
@@ -272,7 +305,7 @@ T.Interior={
 			rymill_rotationswitch4 = {pos = Vector(32.48, -52.52, 34.32), down = true, right = true, text = "H.A.D.S",    },
 			rymill_leverswitchsecond10 = {pos = Vector(38.34, 52.92, 34.85), down = true, right = true, text = "Fast Return",    },
 			rymill_leverswitch = {pos = Vector(-54.2, -2.07, 39.04), down = true, right = true, text = "Engine Release",    },
-			rymill_smallswitch1 = {pos = Vector(-21.52,  60.89,  33.36), down = true, right = true, text = "Spin Cycle",    },
+			rymill_starswitch1 = {pos = Vector(-16.63, 65.72, 33.31), down = true, right = true, text = "Spin Cycle",    },
 			rymill_smallswitch3 = {pos = Vector(-26.57,  57.97,  33.37), down = true, right = true, text = "Spin Switch",    },
 			rymill_togglebutton2 = {pos = Vector(22.03, 64.93, 35.02), down = true, right = true, text = "Door Lock",    },
 			rymill_levercontrolright2 = {pos = Vector(-21.9, 39.39, 40.97), down = true, right = true, text = "Door",    },
@@ -302,7 +335,7 @@ T.Interior={
 			rymill_rotationswitch3 ="float",
 			rymill_rotationswitch4 ="hads",
 			rymill_leverswitchsecond9 ="fastreturn",
-			rymill_smallswitch1 ="spin_cycle",
+			rymill_starswitch1 ="spin_cycle",
 			rymill_smallswitch3 ="spin_switch",
 			rymill_togglebutton2 ="doorlock",
 			rymill_levercontrolright2 ="door",
@@ -339,6 +372,8 @@ T.Interior={
 		consolegrid_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		ringsensors_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		radiationscreen_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rotor_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+
 
 		-- Controls
 		--PANEL1
@@ -424,6 +459,7 @@ T.Interior={
 		rymill_leverswitchsecond12 = {pos=Vector(-48.355,46.325,35.136), ang=Angle(0,30,0)},
 		rymill_leverswitchsecond13 = {pos=Vector(-51.69,44.399,35.136), ang=Angle(0,30,0)},
 		rymill_leverswitchsecond14 = {pos=Vector(-55.11,42.425,35.136), ang=Angle(0,30,0)},
+		rymill_starswitch1 = {pos=Vector(-16.497,65.292,33.98), ang=Angle(0,30,0)},
 
 
 

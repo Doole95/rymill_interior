@@ -168,6 +168,39 @@ PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
+--rotor-
+
+local PART={}
+PART.ID = "rotor_rymill"
+PART.Name = "Rymill Rotor"
+PART.Model = "models/dalliias/whittagann/timerotor.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+if CLIENT then
+	function PART:Initialize()
+	self.timerotor={}
+	self.timerotor.pos=0
+	self.timerotor.mode=1
+	end
+
+	function PART:Think()
+		local ext=self.exterior
+		if ext:GetData("flight") or ext:GetData("teleport") or ext:GetData("vortex") then
+			if self.timerotor.pos==1 then
+				self.timerotor.pos=0
+			end
+				
+			self.timerotor.pos=math.Approach( self.timerotor.pos, self.timerotor.mode, FrameTime()*0.25 )
+			self:SetPoseParameter( "switch", self.timerotor.pos )
+		end
+	end
+end
+
+TARDIS:AddPart(PART)
+
+
 
 
 
@@ -1269,6 +1302,20 @@ local PART = {}
 PART.ID = "rymill_dialreader4"
 PART.Name = "rymill_dialreader4"
 PART.Model = "models/dalliias/whittagann/dialreadercontrol4.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_starswitch1"
+PART.Name = "rymill_starswitch1"
+PART.Model = "models/dalliias/whittagann/starswitch.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.UseTransparencyFix = true
