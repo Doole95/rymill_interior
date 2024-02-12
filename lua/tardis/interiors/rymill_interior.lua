@@ -233,6 +233,7 @@ T.Interior={
             },
 
         },
+	
 
 },
 
@@ -373,6 +374,9 @@ T.Interior={
 		ringsensors_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		radiationscreen_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rotor_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rymill_faultlocator = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		room_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 
 		-- Controls
@@ -437,7 +441,7 @@ T.Interior={
 		rymill_leverswitchsecond7 = {pos=Vector(27.814,34.932,42), ang=Angle(0,-30,0)},
 		rymill_leverswitchsecond8 = {pos=Vector(32.653,43.312,38.8), ang=Angle(0,-30,0)},
 		rymill_leverswitchsecond9 = {pos=Vector(37.435,51.596,35.45), ang=Angle(0,-30,0)},
-		rymill_leverswitchsecond10 = {pos=Vector(33.692,53.758,35.45), ang=Angle(0,-30,0)},
+		rymill_leverswitchsecond15 = {pos=Vector(33.692,53.758,35.45), ang=Angle(0,-30,0)},
 		rymill_togglebutton2 = {pos=Vector(21.343,63.06,33.8), ang=Angle(0,-30,0)},
 		rymill_lenscontrol = {pos=Vector(13.712,49.983,39.521), ang=Angle(0,-30,0)},
 		rymill_pianobutton8 = {pos=Vector(11.406,68.364,34.447), ang=Angle(0,-30,0)},
@@ -605,6 +609,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk", 2, "controls_green" },
 		{ "rymill_controldisk2", 2, "controls_green" },
 		{ "rymill_powercontrol", 2, "controls_green" },
+		{ "rymill_faultlocator", 5, "downlight_lamp" },
     },
     ["flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -618,6 +623,7 @@ T.Interior.TextureSets = {
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightsoff" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundlesoff" },
 		{ "rymill_powercontrol", 2, "controls_red" },
+		{ "rymill_faultlocator", 5, "downlight_lampoff" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",
@@ -631,6 +637,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk", 2, "controls_red" },
 		{ "rymill_controldisk2", 2, "controls_red" },
 		{ "self", 1, "walls_roundles_warning" },
+		{ "rymill_faultlocator", 5, "downlight_lampwarn" },
     },
 	["warning_flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -644,6 +651,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk", 2, "controls_red" },
 		{ "rymill_controldisk2", 2, "controls_red" },
 		{ "self", 1, "walls_roundles_warning" },
+		{ "rymill_faultlocator", 5, "downlight_lampwarn" },
     }
 
 

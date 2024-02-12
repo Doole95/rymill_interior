@@ -1,0 +1,22 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\room_floor_Base_color"
+	"$bumpmap" "models\dalliias\rymill\room_floor_Normal"
+	"$normalmap" "models\dalliias\rymill\room_floor_Roughness"
+
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/environment"
+	"$envmaptint" "[0.2 0.2 0.2]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "0"
+}
+
+
+
+
+
