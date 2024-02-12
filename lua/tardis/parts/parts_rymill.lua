@@ -90,6 +90,16 @@ PART.UseTransparencyFix = true
 TARDIS:AddPart(PART)
 
 local PART={}
+PART.ID = "room_rymill"
+PART.Name = "room"
+PART.Model = "models/dalliias/whittagann/room.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART={}
 PART.ID = "consolelights_rymill"
 PART.Name = "consolelights"
 PART.Model = "models/dalliias/whittagann/consolelights.mdl"
@@ -192,7 +202,7 @@ if CLIENT then
 				self.timerotor.pos=0
 			end
 				
-			self.timerotor.pos=math.Approach( self.timerotor.pos, self.timerotor.mode, FrameTime()*0.25 )
+			self.timerotor.pos=math.Approach( self.timerotor.pos, self.timerotor.mode, FrameTime()*0.3 )
 			self:SetPoseParameter( "switch", self.timerotor.pos )
 		end
 	end
@@ -205,7 +215,6 @@ PART.ID = "rymill_faultlocator"
 PART.Name = "Rymill faultlocator"
 PART.Model = "models/dalliias/whittagann/faultlocator.mdl"
 PART.AutoSetup = true
-PART.UseTransparencyFix = true
 PART.Animate = true
 PART.Collision = true
 PART.AnimateSpeed = 6
@@ -213,6 +222,18 @@ PART.Sound = "rymill/rymill/button1.mp3"
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_glassfloormetal"
+PART.Name = "Rymill glassfloormetal"
+PART.Model = "models/dalliias/whittagann/glassfloormetal.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+
 
 
 
@@ -766,6 +787,20 @@ TARDIS:AddPart(PART)
 local PART = {}
 PART.ID = "rymill_leverswitchsecond14"
 PART.Name = "rymill_leverswitchsecond14"
+PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+PART.Animate = true
+PART.AnimateSpeed = 6
+PART.Sound = "rymill/rymill/button1.mp3"
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_leverswitchsecond15"
+PART.Name = "rymill_leverswitchsecond15"
 PART.Model = "models/dalliias/whittagann/leverswitchsecond.mdl"
 PART.AutoSetup = true
 PART.Collision = true
