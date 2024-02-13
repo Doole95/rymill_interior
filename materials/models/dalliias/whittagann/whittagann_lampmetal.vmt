@@ -2,7 +2,7 @@
 {
 	"$basetexture" "models/dalliias/whittagann/whittagann_lampmetal_Emissive"
 
-	"$surfaceprop" "Wood"
+	
 
 	"$envmap" "models/dalliias/whittagann/environment"
 	"$envmaptint" "[0.15 0.2 0.2]"

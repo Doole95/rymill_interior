@@ -16,11 +16,15 @@ T.Interior={
 
 	Sounds={
 		Teleport={
-			--demat= "molda/tuco/dematint.wav",
-			--mat= "molda/tuco/matint.wav"
+			demat= "rymill/rymill/dematrymill.mp3",
+			mat= "rymill/rymill/matrymill.mp3",
+			--fullflight = "p00gie/tardis/default/full_int.ogg",
+            demat_fail = "rymill/rymill/demat_failrymill.mp3",
+            --demat_hads = "p00gie/tardis/demat_hads.wav",
+            --interrupt = "p00gie/tardis/default/demat_interrupt.ogg",
 		},
-		--FlightLoop = "molda/tuco/flight.wav",
-
+		FlightLoop = "rymill/rymill/flight_looprymill.wav",
+		FlightLoopDamaged = "rymill/rymill/flight_loop_damagedrymill.wav",
 		Power={
             On="rymill/rymill/turnon.mp3",
 
@@ -192,6 +196,37 @@ T.Interior={
 
             warn = {
                 color = Color(255, 20, 20)
+            },
+            off_warn = {
+                color = Color(255, 20, 20)
+            },
+            off = {
+                color = Color(0, 51, 255),
+				brightness = 0,
+            },
+
+        },
+		room_lamp7 = {
+            color = Color(20, 51, 120),
+			texture = "effects/flashlight/soft",
+			fov = 140,
+			distance = 1000,
+			brightness = 0.5,
+			pos = Vector(0, 0, 115),
+			ang = Angle(90, 0, 0),
+
+
+
+
+
+
+            shadows = true,
+
+            nopower = true,
+
+            warn = {
+                color = Color(255, 20, 20),
+				brightness = 0.5,
             },
             off_warn = {
                 color = Color(255, 20, 20)
