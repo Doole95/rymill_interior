@@ -90,16 +90,6 @@ PART.UseTransparencyFix = true
 TARDIS:AddPart(PART)
 
 local PART={}
-PART.ID = "room_rymill"
-PART.Name = "room"
-PART.Model = "models/dalliias/whittagann/room.mdl"
-PART.AutoSetup = true
-PART.Collision = true
-PART.UseTransparencyFix = true
-
-TARDIS:AddPart(PART)
-
-local PART={}
 PART.ID = "consolelights_rymill"
 PART.Name = "consolelights"
 PART.Model = "models/dalliias/whittagann/consolelights.mdl"

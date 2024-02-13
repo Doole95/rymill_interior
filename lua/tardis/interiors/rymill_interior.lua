@@ -202,14 +202,15 @@ T.Interior={
             },
 
         },
-		room_lamp7 = {
+		
+		room_lamp8 = {
             color = Color(20, 51, 110),
 			texture = "effects/flashlight/soft",
-			fov = 110,
-			distance = 200,
-			brightness = 1,
-			pos = Vector(0, 0, 120),
-			ang = Angle(90, 0, 0),
+			fov = 140,
+			distance = 1000,
+			brightness = 1.59,
+			pos = Vector(290.23046875, -496.87548828125, 118),
+			ang = Angle(90, 75.160308837891, 180),
 
 
 
@@ -376,7 +377,6 @@ T.Interior={
 		rotor_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_faultlocator = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
-		room_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 
 		-- Controls
