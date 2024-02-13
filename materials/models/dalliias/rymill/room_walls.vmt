@@ -1,8 +1,8 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\dalliias\rymill\room_walls_Base_color"
-	"$bumpmap" "models\dalliias\rymill\room_walls_Base_color"
-	"$normalmap" "models\dalliias\rymill\room_walls_Roughness"
+	--"$bumpmap" "models\dalliias\rymill\room_walls_Normal"
+	--"$normalmap" "models\dalliias\rymill\room_walls_Roughness"
 	"$surfaceprop" "concrete"
 
 	"$envmap" "models/dalliias/whittagann/environment"
