@@ -101,7 +101,6 @@ PART.Name = "doorway"
 PART.Model = "models/dalliias/whittagann/doorway.mdl"
 PART.AutoSetup = true
 PART.Collision = true
-PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
@@ -192,7 +191,7 @@ PART.Name = "Rymill Rotor"
 PART.Model = "models/dalliias/whittagann/timerotor.mdl"
 PART.AutoSetup = true
 PART.Collision = true
-PART.UseTransparencyFix = true
+PART.UseTransparencyFix = false
 
 if CLIENT then
 	function PART:Initialize()

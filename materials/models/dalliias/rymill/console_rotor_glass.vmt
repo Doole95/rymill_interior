@@ -3,8 +3,8 @@
 	"$additive" 1
 	"$basetexture" "models\dalliias\rymill\console_rotor_glass_Base_color"
 	"$envmap" "models/dalliias/whittagann/environment"
-	"$color2" "[ 0.2 0.2 0.2]"
-	"$envmaptint" "[ 0.1 0.1 0.1 ]"
+	"$color2" "[ 0.5 0.5 0.5]"
+	"$envmaptint" "[ 0.2 0.2 0.2 ]"
 	"$nocull" "0"
 	"$nodecal" "1"
 	"$surfaceprop" "glass"

@@ -1,11 +1,11 @@
 "vertexlitgeneric"
 {
-	"$additive" 1
+	"$additive" 0
 	"$basetexture" "models\dalliias\rymill\rotor_glass_Base_color"
 	"$bumpmap" "models\dalliias\rymill\rotor_glass_Normal"
 	"$envmap" "models/dalliias/whittagann/Rough_ENV"
 	"$color2" "[ 0.8 0.8 1]"
-	"$envmaptint" "[ 0.5 0.5 0.5 ]"
+	"$envmaptint" "[ 0.5 0.8 0.9 ]"
 	"$nocull" "0"
 	"$nodecal" "1"
 	"$surfaceprop" "glass"

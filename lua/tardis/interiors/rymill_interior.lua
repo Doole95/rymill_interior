@@ -243,7 +243,7 @@ T.Interior={
 			texture = "effects/flashlight/soft",
 			fov = 140,
 			distance = 1000,
-			brightness = 1.59,
+			brightness = 2,
 			pos = Vector(290.23046875, -496.87548828125, 118),
 			ang = Angle(90, 75.160308837891, 180),
 
@@ -410,7 +410,7 @@ T.Interior={
 		consolegrid_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		ringsensors_rymill = {pos=Vector(0,0,0), ang=Angle(0,90,0)},
 		radiationscreen_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
-		rotor_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rotor_rymill = {pos=Vector(0,0,-1), ang=Angle(0,0,0)},
 		rymill_faultlocator = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
