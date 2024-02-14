@@ -355,6 +355,7 @@ T.Interior={
 			rymill_dialreader1 = {pos = Vector(50.88, 16.77, 38.48), down = true, right = true, text = "Music",    },
 			rymill_pianobutton9 = {pos = Vector(8.71, 69.31, 34.87), down = true, right = true, text = "Scanner",    },
 			rymill_leverswitchsecond13 = {pos = Vector(-52.12, 45.5, 34.69), down = true, right = true, text = "Toggle Console",    },
+			rymill_leverswitchsecond1 = {pos = Vector(-28.7,-34.6,42), down = true, right = true, text = "Flight",    },
         },
 
     	Controls = {
