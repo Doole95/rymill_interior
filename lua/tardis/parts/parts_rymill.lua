@@ -44,6 +44,7 @@ PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
+
 local PART={}
 PART.ID = "internaldoors_rymill"
 PART.Name = "internaldoors"
@@ -54,6 +55,18 @@ PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 1
 PART.Sound = "rymill/rymill/door.mp3"
+PART.ShouldTakeDamage = true
+
+if SERVER then
+
+    function PART:Use()
+        if ( self:GetOn() ) then
+            self:SetCollide(true,false)
+        else
+            self:SetCollide(false,false)
+        end
+    end
+end
 
 if SERVER then
 
@@ -76,7 +89,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 1
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/door.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 if SERVER then
@@ -98,7 +115,6 @@ PART.Name = "doorway"
 PART.Model = "models/dalliias/whittagann/doorway.mdl"
 PART.AutoSetup = true
 PART.Collision = true
-PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
@@ -189,7 +205,7 @@ PART.Name = "Rymill Rotor"
 PART.Model = "models/dalliias/whittagann/timerotor.mdl"
 PART.AutoSetup = true
 PART.Collision = true
-PART.UseTransparencyFix = true
+PART.UseTransparencyFix = false
 
 if CLIENT then
 	function PART:Initialize()
@@ -336,7 +352,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -364,7 +384,7 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
-PART.Sound = "rymill/rymill/button1.mp3"
+PART.Sound = "rymill/rymill/button5.mp3"
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -378,7 +398,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -392,7 +416,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -406,7 +434,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -434,7 +466,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -448,7 +484,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -476,7 +516,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -490,7 +534,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button4.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -504,7 +552,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -518,7 +570,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -546,7 +602,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -560,7 +620,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -574,7 +638,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -588,7 +656,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -630,7 +702,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -644,7 +720,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -658,7 +738,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -672,7 +756,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -700,7 +788,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -714,7 +806,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -728,7 +824,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -742,7 +842,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -768,7 +872,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -782,7 +890,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button7.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -796,7 +908,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -810,7 +926,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -824,7 +944,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -838,7 +962,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -852,7 +980,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -866,7 +998,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -880,7 +1016,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button7.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -895,7 +1035,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -909,7 +1053,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -923,7 +1071,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -951,7 +1103,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -965,7 +1121,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button3.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -979,7 +1139,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -993,7 +1157,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1007,7 +1175,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1021,7 +1193,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1035,7 +1211,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1049,7 +1229,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1063,7 +1247,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button7.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1077,7 +1265,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1105,7 +1297,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1119,7 +1315,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1133,7 +1333,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1147,7 +1351,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button5.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1175,7 +1383,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1189,7 +1401,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button7.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1203,7 +1419,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1217,7 +1437,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button6.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1231,14 +1455,18 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button7.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
 
 local PART = {}
 PART.ID = "rymill_rotationswitch6"
-PART.Name = "rymill_rotationswitch6"
+PART.Name = "rymill_rotationswitch3"
 PART.Model = "models/dalliias/whittagann/rotationswitchcontrol.mdl"
 PART.AutoSetup = true
 PART.Collision = true
@@ -1259,7 +1487,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1273,7 +1505,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1287,7 +1523,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button2.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1301,7 +1541,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button3.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1315,7 +1559,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button2.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1329,7 +1577,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button7.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1343,7 +1595,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button5.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
@@ -1371,7 +1627,11 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 6
+<<<<<<< HEAD
+PART.Sound = "rymill/rymill/button4.mp3"
+=======
 PART.Sound = "rymill/rymill/button6.mp3"
+>>>>>>> dev
 PART.ShouldTakeDamage = true
 
 TARDIS:AddPart(PART)
