@@ -18,7 +18,7 @@ T.Interior={
 		--ang=Angle(0,90,0),
 	--},
 	Sounds={
-		Door="rymill/rymill/door.mp3",
+		Door = "rymill/rymill/door.mp3",
 	},
 	Parts={
         intdoor = { 
