@@ -1,14 +1,18 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\dalliias\rymill\corridordoors_roundles_Emissive"
-	"$additive" 1
+<<<<<<< Updated upstream
+
+=======
+	"$additive" 0
+>>>>>>> Stashed changes
 	"$selfillum" "1"
 	"$selfillummask" "models\dalliias\rymill\corridordoors_roundles_Emissive"
 
 	"$surfaceprop" "concrete"
 
 	"$envmap" "models/dalliias/whittagann/RoughENV"
-	"$envmaptint" "[1 1 1]"
+	"$envmaptint" "[0.5 0.5 0.5]"
 
 	"$nodecal" "0"
     "$rimlight"    "1"

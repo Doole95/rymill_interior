@@ -4,6 +4,13 @@ local T={}
 T.Base="base"
 T.Name="Rymill Console"
 T.ID="rymill"
+T.EnableClassicDoors = false
+T.Versions = {
+    main = {
+        classic_doors_id = "classicrymill",
+        double_doors_id = "rymill",
+    },
+}
 T.Interior={
 	Model="models/dalliias/whittagann/interior.mdl",
 	Portal = {
