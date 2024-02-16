@@ -51,7 +51,7 @@ PART.Model = "models/dalliias/whittagann/internaldoors.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.UseTransparencyFix = true
-
+PART.Sound = "rymill/rymill/door.mp3"
 TARDIS:AddPart(PART)
 
 local PART={}
