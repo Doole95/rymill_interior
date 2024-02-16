@@ -408,7 +408,7 @@ T.Interior={
         floor_glass_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         corridordoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         internaldoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
-        doorway_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+        doorway_rymill = {pos=Vector(0,0,0), ang=Angle(0,-90,0)},
 		consolelights_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		linesreader_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		squarerows_rymill = {pos=Vector(-2,2,-1), ang=Angle(0,90,0)},

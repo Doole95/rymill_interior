@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\dalliias\rymill\corridordoors_roundles_Emissive"
-	"$additive" 1
+	"$additive" 0
 	"$selfillum" "1"
 	"$selfillummask" "models\dalliias\rymill\corridordoors_roundles_Emissive"
 
