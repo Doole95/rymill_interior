@@ -1,7 +1,11 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\dalliias\rymill\corridordoors_roundles_Emissive"
+<<<<<<< Updated upstream
 
+=======
+	"$additive" 0
+>>>>>>> Stashed changes
 	"$selfillum" "1"
 	"$selfillummask" "models\dalliias\rymill\corridordoors_roundles_Emissive"
 
