@@ -238,6 +238,16 @@ PART.UseTransparencyFix = true
 TARDIS:AddPart(PART)
 
 local PART = {}
+PART.ID = "rymill_rymillchair"
+PART.Name = "Rymill rymillchair"
+PART.Model = "models/dalliias/whittagann/rymillchair.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.ShouldTakeDamage = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
 PART.ID = "rymill_glassfloormetal"
 PART.Name = "Rymill glassfloormetal"
 PART.Model = "models/dalliias/whittagann/glassfloormetal.mdl"

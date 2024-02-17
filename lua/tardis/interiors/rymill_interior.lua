@@ -42,6 +42,16 @@ T.Interior={
 
 	},
 
+	Seats = {
+        {
+            pos = Vector(135.675, -0.061, 18.107),
+            ang = Angle(0,90,0),
+        },
+    },
+
+
+	
+
 	Lamps = {
         room_lamp1 = {
             color = Color(0, 51, 255),
@@ -425,7 +435,7 @@ T.Interior={
 		rymill_faultlocator = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_faultlocatorglass = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
-
+		rymill_rymillchair = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 		-- Controls
 		--PANEL1
@@ -550,7 +560,7 @@ T.Exterior={
 	},
 	Light={
 		enabled=true,
-		pos=Vector(0,0,115),
+		pos=Vector(0,0,120),
 		color=Color(255,217,179)
 	},
 	ProjectedLight = {
