@@ -1,9 +1,9 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models\dalliias\rymill\pillar_lights_Emissiveoff"
+	"$basetexture" "models\dalliias\rymill\pillar_lights_Emissivewarn"
 
 	"$selfillum" "1"
-	"$selfillummask" "models\dalliias\rymill\pillar_lights_Emissiveoff"
+	"$selfillummask" "models\dalliias\rymill\pillar_lights_Emissivewarn"
 
 	"$surfaceprop" "concrete"
 
