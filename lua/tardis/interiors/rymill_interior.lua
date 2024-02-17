@@ -27,15 +27,18 @@ T.Interior={
 			mat= "rymill/rymill/matrymill.mp3",
 			--fullflight = "p00gie/tardis/default/full_int.ogg",
             demat_fail = "rymill/rymill/demat_failrymill.mp3",
-            --demat_hads = "p00gie/tardis/demat_hads.wav",
+            demat_hads = "rymill/rymill/demat_hadsrymill.mp3",
             --interrupt = "p00gie/tardis/default/demat_interrupt.ogg",
 		},
 		FlightLoop = "rymill/rymill/flight_looprymill.wav",
 		FlightLoopDamaged = "rymill/rymill/flight_loop_damagedrymill.wav",
 		Power={
             On="rymill/rymill/turnon.mp3",
+			Off = "rymill/rymill/power_offrymill.mp3",
 
 		},
+		Spawn = "rymill/rymill/spawnrymill.mp3",
+        Delete = "rymill/rymill/power_offrymill.mp3",
 
 	},
 
@@ -565,10 +568,12 @@ T.Exterior={
 	},
 	Sounds = {
 		Teleport = {
-			--demat = "molda/tuco/dematext.wav",
+			demat= "rymill/rymill/dematrymill.mp3",
+			mat= "rymill/rymill/matrymill.mp3",
+            demat_fail = "rymill/rymill/demat_failrymill.mp3",
+            demat_hads = "rymill/rymill/demat_hadsrymill.mp3",
 --			demat_demaged = 
---			demat_fail = 
-			--mat = "molda/tuco/matext.wav"
+		--	fullflight = "p00gie/tardis/default/full_int.ogg",
 --			mat_demaged = 
 --			mat_fail = 
 --			full_flight = 
@@ -581,8 +586,8 @@ T.Exterior={
 		--	close = "molda/ruth/lqdoorsclose.wav"
 --			locked =
 		},
-		--FlightLoop = "molda/tuco/flight.wav",
---		FlightLoopDemaged = 
+		FlightLoop = "rymill/rymill/flight_looprymill.wav",
+		FlightLoopDamaged = "rymill/rymill/flight_loop_damagedrymill.wav",
 --		Cloak =
 --		CloakOff =
 --		RepairFinish = 
