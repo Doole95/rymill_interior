@@ -76,7 +76,7 @@ PART.Collision = true
 PART.UseTransparencyFix = true
 PART.Animate = true
 PART.AnimateSpeed = 1
-PART.Sound = "rymill/rymill/button2.mp3"
+PART.Sound = "rymill/rymill/door.mp3"
 PART.ShouldTakeDamage = true
 
 if SERVER then

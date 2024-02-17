@@ -363,6 +363,7 @@ T.Interior={
 			rymill_pianobutton9 = {pos = Vector(8.71, 69.31, 34.87), down = true, right = true, text = "Scanner",    },
 			rymill_leverswitchsecond13 = {pos = Vector(-52.12, 45.5, 34.69), down = true, right = true, text = "Toggle Console",    },
         },
+		IntDoorAnimationTime = 1.2,
 
     	Controls = {
 
@@ -506,7 +507,7 @@ T.Interior={
 		rymill_leverswitchsecond13 = {pos=Vector(-51.69,44.399,35.136), ang=Angle(0,30,0)},
 		rymill_leverswitchsecond14 = {pos=Vector(-55.11,42.425,35.136), ang=Angle(0,30,0)},
 		rymill_starswitch1 = {pos=Vector(-16.497,65.292,33.98), ang=Angle(0,30,0)},
-
+		
 
 
 
