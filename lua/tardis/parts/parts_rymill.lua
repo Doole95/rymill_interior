@@ -227,6 +227,17 @@ PART.ShouldTakeDamage = true
 TARDIS:AddPart(PART)
 
 local PART = {}
+PART.ID = "rymill_faultlocatorglass"
+PART.Name = "Rymill faultlocatorglass"
+PART.Model = "models/dalliias/whittagann/faultlocatorglass.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.ShouldTakeDamage = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
 PART.ID = "rymill_glassfloormetal"
 PART.Name = "Rymill glassfloormetal"
 PART.Model = "models/dalliias/whittagann/glassfloormetal.mdl"

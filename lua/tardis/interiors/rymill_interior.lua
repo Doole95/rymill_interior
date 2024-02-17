@@ -423,6 +423,7 @@ T.Interior={
 		radiationscreen_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rotor_rymill = {pos=Vector(0,0,-1), ang=Angle(0,0,0)},
 		rymill_faultlocator = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rymill_faultlocatorglass = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 

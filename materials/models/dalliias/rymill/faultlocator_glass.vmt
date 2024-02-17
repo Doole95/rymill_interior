@@ -1,0 +1,13 @@
+"vertexlitgeneric"
+{
+	"$additive" 1
+	"$basetexture" "models\dalliias\rymill\faultlocator_glass_Base_color"
+	"$envmap" "models/doctormemes/hurt/roughENV"
+	"$color2" "[ 0.7 0.7 0.9 ]"
+	"$envmaptint" "[ 0.3 0.4 0.5 ]"
+	"$nocull" "0"
+	"$nodecal" "1"
+	"$surfaceprop" "glass"
+}
+
+
