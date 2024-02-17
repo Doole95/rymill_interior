@@ -168,7 +168,7 @@ T.Interior={
 
 
 
-            shadows = true,
+            shadows = false,
 
             nopower = true,
 
@@ -230,7 +230,7 @@ T.Interior={
 
 
 
-            shadows = true,
+            shadows = false,
 
             nopower = true,
 
@@ -262,7 +262,7 @@ T.Interior={
 
 
 
-            shadows = true,
+            shadows = false,
 
             nopower = true,
 

@@ -20,7 +20,7 @@
 	"animatedTextureVar" "$basetexture"
 	"animatedTextureVar" "$selfillummask"
 	"animatedTextureFrameNumVar" "$frame"
-	"animatedTextureFrameRate" "24"
+	"animatedTextureFrameRate" "8"
 	}
 	}
 }
