@@ -834,6 +834,8 @@ PART.AnimateSpeed = 6
 PART.Sound = "rymill/rymill/button5.mp3"
 PART.ShouldTakeDamage = true
 
+// Power Control.
+
 TARDIS:AddPart(PART)
 
 local PART = {}
