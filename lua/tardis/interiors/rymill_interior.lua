@@ -743,6 +743,9 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk2", 2, "controls_red" },
 		{ "self", 1, "walls_roundles_warning" },
 		{ "rymill_faultlocator", 5, "downlight_lampwarn" },
+		{ "pillars_rymill", 1, "pillar_lightswarn" },
+		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightswarn" },
+		{ "corridordoors_rymill", 1, "corridordoors_roundleswarn" },
     },
 	["warning_flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -757,6 +760,9 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk2", 2, "controls_red" },
 		{ "self", 1, "walls_roundles_warning" },
 		{ "rymill_faultlocator", 5, "downlight_lampwarn" },
+		{ "pillars_rymill", 1, "pillar_lightswarn" },
+		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightswarn" },
+		{ "corridordoors_rymill", 1, "corridordoors_roundleswarn" },
     }
 
 

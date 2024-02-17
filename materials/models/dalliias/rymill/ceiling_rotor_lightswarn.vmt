@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\ceiling_rotor_lights_Emissivewarn"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\ceiling_rotor_lights_Emissivewarn"
+
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmaptint" "[0.5 0.5 0.5]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "0"
+}
