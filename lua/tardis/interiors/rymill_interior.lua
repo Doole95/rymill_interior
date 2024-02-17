@@ -671,6 +671,51 @@ T.Interior.TextureSets = {
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
     },
+	["normalseq1"] = {
+        prefix = "models/dalliias/rymill/",
+        { "self", 1, "walls_roundlesoff" },
+		{ "pillars_rymill", 1, "pillar_lights" },
+		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightsoff" },
+		{ "corridordoors_rymill", 1, "corridordoors_roundlesoff" },
+		{ "linesreader_rymill", 0, "linesreader" },
+		{ "squarerows_rymill", 1, "squarerows" },
+		{ "rymill_controldisk", 3, "controldiskscenter" },
+		{ "rymill_controldisk2", 3, "controldiskscenter" },
+		{ "rymill_controldisk", 2, "controls_green" },
+		{ "rymill_controldisk2", 2, "controls_green" },
+		{ "rymill_powercontrol", 2, "controls_green" },
+		{ "rymill_faultlocator", 5, "downlight_lamp" },
+    },
+	["normalseq2"] = {
+        prefix = "models/dalliias/rymill/",
+        { "self", 1, "walls_roundlesoff" },
+		{ "pillars_rymill", 1, "pillar_lights" },
+		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lights" },
+		{ "corridordoors_rymill", 1, "corridordoors_roundlesoff" },
+		{ "linesreader_rymill", 0, "linesreader" },
+		{ "squarerows_rymill", 1, "squarerows" },
+		{ "rymill_controldisk", 3, "controldiskscenter" },
+		{ "rymill_controldisk2", 3, "controldiskscenter" },
+		{ "rymill_controldisk", 2, "controls_green" },
+		{ "rymill_controldisk2", 2, "controls_green" },
+		{ "rymill_powercontrol", 2, "controls_green" },
+		{ "rymill_faultlocator", 5, "downlight_lamp" },
+    },
+	["normalseq3"] = {
+        prefix = "models/dalliias/rymill/",
+        { "self", 1, "walls_roundles" },
+		{ "pillars_rymill", 1, "pillar_lights" },
+		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lights" },
+		{ "corridordoors_rymill", 1, "corridordoors_roundles" },
+		{ "linesreader_rymill", 0, "linesreader" },
+		{ "squarerows_rymill", 1, "squarerows" },
+		{ "rymill_controldisk", 3, "controldiskscenter" },
+		{ "rymill_controldisk2", 3, "controldiskscenter" },
+		{ "rymill_controldisk", 2, "controls_green" },
+		{ "rymill_controldisk2", 2, "controls_green" },
+		{ "rymill_powercontrol", 2, "controls_green" },
+		{ "rymill_faultlocator", 5, "downlight_lamp" },
+    },
     ["flight"] = {
         prefix = "models/dalliias/rymill/",
         { "self", 14, "sequencelightson" },
@@ -775,6 +820,9 @@ T.CustomHooks = {
 		end
 
     },
+	
+
+
 
 	
 
