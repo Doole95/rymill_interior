@@ -13,13 +13,19 @@ T.Interior={
 		width=200,
 		height=400
 	},
-	--Fallback={
-		--pos=Vector(0,-220,3),
-		--ang=Angle(0,90,0),
-	--},
-	Sounds={
-		Door = "rymill/rymill/door.mp3",
+	Fallback={
+		pos=Vector(-350,0,0),
+		ang=Angle(0,0,0),
 	},
+	
+	Sounds={
+	
+	Door={
+		enabled=true,
+		open = "rymill/rymill/door.mp3", 
+		close = "rymill/rymill/door.mp3", 
+	},
+},
 	Parts={
         intdoor = { 
             model = "models/dalliias/whittagann/internaldoors.mdl", 
