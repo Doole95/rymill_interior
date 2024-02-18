@@ -786,15 +786,17 @@ T.Exterior.TextureSets = {
 
 }
 
+
 T.CustomHooks = {
 	power_textureset_update = {
 		inthooks = {
 			["PowerToggled"] = true,
 			["HealthWarningToggled"] = true,
+			["FlightToggled"] = true,
+			-- ["VortexToggled"] = true,
 
 		},
 		func = function(ext, int)
-
 
 			local power = int:GetData("power-state")
             local warning = int:GetData("health-warning", false)
@@ -802,10 +804,15 @@ T.CustomHooks = {
             local teleport = ext:GetData("teleport")
             local vortex = ext:GetData("vortex")
 			local active = flight or teleport or vortex
+
+			ext:ApplyTextureSet("normal")
 			
 			if power then
 				if warning and active then
 					int:ApplyTextureSet("warning_flight")
+					ext:ApplyTextureSet("flight")
+				elseif active then
+					ext:ApplyTextureSet("flight")
 				elseif warning then
 					int:ApplyTextureSet("warning")
 				else 
@@ -838,6 +845,19 @@ T.CustomHooks = {
 			end
 			
 			
+		end
+	},
+	teleport_textureset_update = {
+		exthooks = {
+			["TeleportToggled"] = true,
+		},
+		func = function(ext, int)
+			local teleport = ext:GetData("teleport")
+			if teleport then
+				ext:ApplyTextureSet("vortex")
+			else
+				ext:ApplyTextureSet("normal")
+			end
 		end
 	},
 	interior_initialise = {
