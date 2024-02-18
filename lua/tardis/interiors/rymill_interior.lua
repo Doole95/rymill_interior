@@ -788,32 +788,29 @@ T.Exterior.TextureSets = {
 
 
 T.CustomHooks = {
-	power_textureset_update = {
+	interior_initialise = {
+		"PostInitialize",
+		function(int, ext)
+			int:ApplyTextureSet("additional_textures")
+			ext:ApplyTextureSet("normal")
+		end
+	},
+	interior_power_textureset_update = {
 		inthooks = {
 			["PowerToggled"] = true,
 			["HealthWarningToggled"] = true,
-			["FlightToggled"] = true,
-			-- ["VortexToggled"] = true,
-
 		},
 		func = function(ext, int)
-
+			
 			local power = int:GetData("power-state")
             local warning = int:GetData("health-warning", false)
-            local flight = ext:GetData("flight")
-            local teleport = ext:GetData("teleport")
-            local vortex = ext:GetData("vortex")
+            local flight = int:GetData("flight")
+            local teleport = int:GetData("teleport")
+            local vortex = int:GetData("vortex")
 			local active = flight or teleport or vortex
 
-			ext:ApplyTextureSet("normal")
-			
 			if power then
-				if warning and active then
-					int:ApplyTextureSet("warning_flight")
-					ext:ApplyTextureSet("flight")
-				elseif active then
-					ext:ApplyTextureSet("flight")
-				elseif warning then
+				if warning then
 					int:ApplyTextureSet("warning")
 				else 
 
@@ -843,29 +840,46 @@ T.CustomHooks = {
 				//TODO: Remove parts that are not available when powerered off or damaged.  
 
 			end
-			
-			
+
 		end
 	},
-	teleport_textureset_update = {
-		exthooks = {
-			["TeleportToggled"] = true,
+	interior_flight_textureset_update = {
+		inthooks = {
+			["FlightToggled"] = true,
 		},
 		func = function(ext, int)
-			local teleport = ext:GetData("teleport")
-			if teleport then
-				ext:ApplyTextureSet("vortex")
+			local warning = int:GetData("health-warning", false)
+			local flight = int:GetData("flight")
+			local teleport = int:GetData("teleport")
+			local vortex = int:GetData("vortex")
+			local active = flight or teleport or vortex
+
+			if warning and active then
+				int:ApplyTextureSet("warning_flight")
+			elseif warning then
+				int:ApplyTextureSet("warning")
+			elseif active then
+				int:ApplyTextureSet("flight")
 			else
+				int:ApplyTextureSet("normal")
+			end
+		end
+	},
+	exterior_vortex_textureset_update = {
+		exthooks = {
+			["VortexToggled"] = true,
+		},
+		func = function(ext, int)
+            local vortex = ext:GetData("vortex")
+
+			if vortex then
+				ext:ApplyTextureSet("vortex")
+			else 
 				ext:ApplyTextureSet("normal")
 			end
 		end
 	},
-	interior_initialise = {
-		"PostInitialize",
-		function(int)
-			int:ApplyTextureSet("additional_textures")
-		end
-	},
+
 }
 
 
