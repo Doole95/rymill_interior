@@ -161,6 +161,60 @@ PART.UseTransparencyFix = true
 
 TARDIS:AddPart(PART)
 
+local PART = {}
+PART.ID = "rymill_vol_lightdownlight1"
+PART.Name = "Rymill Volumetric downlight1"
+PART.Model = "models/effects/vol_light64x128.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_vol_lightdownlight2"
+PART.Name = "Rymill Volumetric downlight2"
+PART.Model = "models/effects/vol_light64x128.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_vol_lightdownlight3"
+PART.Name = "Rymill Volumetric downlight3"
+PART.Model = "models/effects/vol_light64x128.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_vol_lightdownlight4"
+PART.Name = "Rymill Volumetric downlight4"
+PART.Model = "models/effects/vol_light64x128.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_vol_lightdownlight5"
+PART.Name = "Rymill Volumetric downlight5"
+PART.Model = "models/effects/vol_light64x128.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART = {}
+PART.ID = "rymill_floordownlights"
+PART.Name = "Rymill floordownlights"
+PART.Model = "models/dalliias/whittagann/floordownlights.mdl"
+PART.AutoSetup = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
 local PART={}
 PART.ID = "ringsensors_rymill"
 PART.Name = "ringsensors"

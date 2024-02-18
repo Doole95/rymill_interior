@@ -419,7 +419,12 @@ T.Interior={
 		pillars_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
 		ceiling_rotor_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
 		ceiling_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
-        rymill_vol_light = {pos=Vector(0,5,300), ang=Angle(0,0,0)},	
+        rymill_vol_light = {pos=Vector(0,5,300), ang=Angle(0,0,0)},
+		rymill_vol_lightdownlight1 = {pos = Vector(61.753, 342.924, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight2 = {pos = Vector(110.861, 314.47, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight3 = {pos = Vector(160.073, 285.975, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight4 = {pos = Vector(209.665, 256.63, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight5 = {pos = Vector(258.026, 228.946, 150),  ang = Angle(0, 35.455, 0)},		
         floor_glass_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         corridordoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         internaldoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
@@ -436,6 +441,7 @@ T.Interior={
 		rymill_faultlocatorglass = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_rymillchair = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rymill_floordownlights = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 		-- Controls
 		--PANEL1
@@ -673,6 +679,11 @@ T.Interior.TextureSets = {
 		{ "rotor_rymill", 2, "rotor_glass" },
 		{ "rotor_rymill", 2, "rotor_glass" },
 		{ "rymill_vol_light", "vol_lightmask02on" },
+		{ "rymill_vol_lightdownlight1", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight2", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlighton" },
     },
 	["normalseq1"] = {
         prefix = "models/dalliias/rymill/",
@@ -737,6 +748,11 @@ T.Interior.TextureSets = {
 		{ "rymill_faultlocator", 5, "downlight_lampoff" },
 		{ "rotor_rymill", 2, "rotor_glassoff" },
 		{ "rymill_vol_light", "vol_lightmask02" },
+		{ "rymill_vol_lightdownlight1", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight2", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlight" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",
@@ -776,7 +792,12 @@ T.Interior.TextureSets = {
     },
 	["additional_textures"] = {
         prefix = "models/dalliias/rymill/",
-        { "rymill_vol_light", "vol_lightmask02" },
+        { "rymill_vol_light", "vol_lightmask02on" },
+		{ "rymill_vol_lightdownlight1", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight2", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlighton" },
 
     }
 
