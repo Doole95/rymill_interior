@@ -1,0 +1,21 @@
+"vertexlitgeneric"
+{
+	"$additive" 0
+	"$basetexture" "models\dalliias\rymill\rymillvortex"
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\rymillvortex"
+	"$nocull" "0"
+	"$nodecal" "1"
+	"$surfaceprop" "glass"
+
+
+	"Proxies"
+	{
+	"AnimatedTexture"
+	{
+	"animatedTextureVar" "$basetexture"
+	"animatedTextureFrameNumVar" "$frame"
+	"animatedTextureFrameRate" "24"
+	}
+	}
+}

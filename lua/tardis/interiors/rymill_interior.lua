@@ -617,7 +617,7 @@ T.Exterior={
 			angoffset = Angle(0,0,0),AnimateSpeed = 0.2
 		},
 		vortex = {
-			model = "models/doctorwho1200/coral/2005timevortex.mdl",
+			model = "models/dalliias/whittagann/rymillvortex.mdl",
 			pos=Vector(0,0,50),
 			ang=Angle(0,0,0),
 			scale=10
