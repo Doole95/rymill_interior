@@ -879,15 +879,44 @@ T.CustomHooks = {
 			end
 		end
 	},
+
 	interior_initialise = {
 		"PostInitialize",
 		function(int)
 			int:ApplyTextureSet("additional_textures")
 		end
 	},
+
+T.CustomSettings = {
+    interior_lights = {
+        text = "Light",
+        value_type = "list",
+        value = "ldefault",
+        options = {
+            ["ldefault"] = "Blue Interior",
+            ["lwhite"] = "Daylit Interior",
+        }
+    },
+}
+
+T.Templates = {
+	rymill_ldefault = {
+		override = true,
+        condition = function(id, ply, ent)
+            local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+            return (setting_val == "ldefault")
+        end,
+	},
+	rymill_lwhite = {
+		override = true,
+        condition = function(id, ply, ent)
+            local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+            return (setting_val == "lwhite")
+        end,
+	},
 }
 
 
 
-
+TARDIS:AddInterior(T)
 

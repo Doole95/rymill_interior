@@ -17,7 +17,6 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
 	Interior = {
 
         LightOverride = {
-            color=Color(0, 153, 255),
             basebrightness = 1,
             nopowerbrightness = 0.001
         },
@@ -79,6 +78,28 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
         
     
     },
+
+
+    TextureSets = {
+        ["normal"] = {
+            prefix = "models/dalliias/rymill/",
+            { "self", 1, "walls_roundleswhite" },
+        },
+        ["normalseq3"] = {
+            prefix = "models/dalliias/rymill/",
+            { "self", 1, "walls_roundleswhite" },
+        },
+        ["flight"] = {
+            prefix = "models/dalliias/rymill/",
+            { "self", 14, "sequencelightson" },
+            { "self", 1, "walls_roundles_inflightwhite" },
+        },
+    
+    }
+    
 	}
+
+
+    
 })
 
