@@ -85,13 +85,11 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
             prefix = "models/dalliias/rymill/",
             { "self", 1, "walls_roundleswhite" },
             { "corridordoors_rymill", 1, "corridordoors_roundleswhite" },
-            { "internaldoors_rymill", 1, "corridordoors_roundleswhite" },
         },
         ["normalseq3"] = {
             prefix = "models/dalliias/rymill/",
             { "self", 1, "walls_roundleswhite" },
             { "corridordoors_rymill", 1, "corridordoors_roundleswhite" },
-            { "internaldoors_rymill", 1, "corridordoors_roundleswhite" },
         },
         ["flight"] = {
             prefix = "models/dalliias/rymill/",
