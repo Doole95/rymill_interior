@@ -802,7 +802,7 @@ T.CustomHooks = {
             local warning = int:GetData("health-warning", false)
 			local active = flight or teleport or vortex
 
-			local selected = "normal"
+			local selected = "off"
 
 			if warning and not power then
 				selected = "warning_off"
