@@ -824,7 +824,6 @@ T.CustomHooks = {
 					timer.Simple( 4, function()
 						int:ApplyTextureSet("normal")
 					end)
-				end
 			elseif not power then
 				if warning then
 					int:ApplyTextureSet("warning-off")
