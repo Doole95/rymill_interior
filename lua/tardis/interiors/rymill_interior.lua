@@ -879,7 +879,12 @@ T.CustomHooks = {
 			end
 		end
 	},
-
+	interior_initialise = {
+		"PostInitialize",
+		function(int)
+			int:ApplyTextureSet("additional_textures")
+		end
+	},
 }
 
 
