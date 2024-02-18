@@ -811,7 +811,11 @@ T.CustomHooks = {
 
 			if power then
 				if warning then
-					int:ApplyTextureSet("warning")
+					if active then
+						int:ApplyTextureSet("warning_flight")
+					else
+						int:ApplyTextureSet("warning")
+					end
 				else 
 
 					// TODO: Research a way to dispose of the timers when they are not needed, 
@@ -879,13 +883,7 @@ T.CustomHooks = {
 			end
 		end
 	},
-
-	interior_initialise = {
-		"PostInitialize",
-		function(int)
-			int:ApplyTextureSet("additional_textures")
-		end
-	},
+}
 
 T.CustomSettings = {
     interior_lights = {
