@@ -1,17 +1,18 @@
-"vertexlitgeneric"
+"VertexlitGeneric"
 {
-	"$additive" 0
-	"$basetexture" "models\dalliias\rymill\rotor_glass_Base_color"
-	"$bumpmap" "models\dalliias\rymill\rotor_glass_Normal"
-	"$envmap" "models/dalliias/whittagann/Rough_ENV"
-	"$color2" "[ 0.8 0.8 1]"
-	"$envmaptint" "[ 0.5 0.8 0.9 ]"
-	"$nocull" "0"
-	"$nodecal" "1"
-	"$surfaceprop" "glass"
+	"$basetexture" "models\dalliias\rymill\rotor_glass_Emissive"
 
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\rotor_glass_Emissive"
 
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmaptint" "[0.5 0.5 0.5]"
+
+	"$nodecal" "0"
     "$rimlight"    "1"
     "$rimlightexponent""2"
     "$rimlightboost"    "1"
+    "$nocull" "0"
 }
