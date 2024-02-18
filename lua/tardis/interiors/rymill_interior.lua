@@ -832,17 +832,15 @@ T.CustomHooks = {
 			
 			
 		end
-	}
-}
-T.Interior.CustomHooks = {
+	},
 	interior_initialise = {
 		"PostInitialize",
 		function(int)
 			int:ApplyTextureSet("additional_textures")
 		end
 	},
-
 }
+
 
 
 
