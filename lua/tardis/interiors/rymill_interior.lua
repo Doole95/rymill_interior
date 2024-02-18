@@ -821,6 +821,9 @@ T.CustomHooks = {
 				else
 					int:ApplyTextureSet("off")
 				end
+
+				//TODO: Remove parts that are not available when powerered off or damaged.  
+
 			end
 			
 			
@@ -831,8 +834,6 @@ T.Interior.CustomHooks = {
 	interior_initialise = {
 		"PostInitialize",
 		function(int)
-			-- int:SetData("power-state", true)
-			-- int:ApplyTextureSet("off")
 			int:ApplyTextureSet("additional_textures")
 		end
 	},
