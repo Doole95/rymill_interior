@@ -792,6 +792,7 @@ T.CustomHooks = {
 		"PostInitialize",
 		function(int, ext)
 			int:ApplyTextureSet("additional_textures")
+			int:ApplyTextureSet("normal")
 			ext:ApplyTextureSet("normal")
 		end
 	},
@@ -810,16 +811,6 @@ T.CustomHooks = {
 			local active = flight or teleport or vortex
 
 			if power then
-				if warning then
-					if active then
-						int:ApplyTextureSet("warning_flight")
-					else
-						int:ApplyTextureSet("warning")
-					end
-				else 
-
-					// TODO: Research a way to dispose of the timers when they are not needed, 
-					// for instance when a player stops or starts the tardis during the timer sequence.
 
 					timer.Simple( 1, function()
 						int:ApplyTextureSet("normalseq1")
@@ -840,9 +831,6 @@ T.CustomHooks = {
 				else
 					int:ApplyTextureSet("off")
 				end
-
-				//TODO: Remove parts that are not available when powerered off or damaged.  
-
 			end
 
 		end
