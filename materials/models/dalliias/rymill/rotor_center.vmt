@@ -1,7 +1,7 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\dalliias\rymill\rotor_center_Base_color"
-	"$bumpmap" "models\dalliias\rymill\rotor_center_Normal"
+
 
 	"$surfaceprop" "concrete"
 
