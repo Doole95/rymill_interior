@@ -901,8 +901,8 @@ T.Templates = {
         end,
 	},
 }
-
-
-
 TARDIS:AddInterior(T)
+
+
+
 
