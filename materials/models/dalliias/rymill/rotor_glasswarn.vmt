@@ -1,9 +1,9 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models\dalliias\rymill\rotor_glass_Emissiveoff"
+	"$basetexture" "models\dalliias\rymill\rotor_glass_Emissivewarn"
 
 	"$selfillum" "1"
-	"$selfillummask" "models\dalliias\rymill\rotor_glass_Emissiveoff"
+	"$selfillummask" "models\dalliias\rymill\rotor_glass_Emissivewarn"
 
 	"$surfaceprop" "concrete"
 

@@ -670,6 +670,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk2", 2, "controls_green" },
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
+		{ "rotor_rymill", 2, "rotor_glass" },
     },
 	["normalseq1"] = {
         prefix = "models/dalliias/rymill/",
@@ -685,6 +686,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk2", 2, "controls_green" },
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
+		{ "rotor_rymill", 2, "rotor_glassoff" },
     },
 	["normalseq2"] = {
         prefix = "models/dalliias/rymill/",
@@ -700,6 +702,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk2", 2, "controls_green" },
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
+		{ "rotor_rymill", 2, "rotor_glassoff" },
     },
 	["normalseq3"] = {
         prefix = "models/dalliias/rymill/",
@@ -715,6 +718,7 @@ T.Interior.TextureSets = {
 		{ "rymill_controldisk2", 2, "controls_green" },
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
+		{ "rotor_rymill", 2, "rotor_glass" },
     },
     ["flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -729,6 +733,7 @@ T.Interior.TextureSets = {
 		{ "corridordoors_rymill", 1, "corridordoors_roundlesoff" },
 		{ "rymill_powercontrol", 2, "controls_red" },
 		{ "rymill_faultlocator", 5, "downlight_lampoff" },
+		{ "rotor_rymill", 2, "rotor_glassoff" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",
@@ -746,6 +751,7 @@ T.Interior.TextureSets = {
 		{ "pillars_rymill", 1, "pillar_lightswarn" },
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightswarn" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundleswarn" },
+		{ "rotor_rymill", 2, "rotor_glasswarn" },
     },
 	["warning_flight"] = {
         prefix = "models/dalliias/rymill/",
@@ -763,6 +769,7 @@ T.Interior.TextureSets = {
 		{ "pillars_rymill", 1, "pillar_lightswarn" },
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightswarn" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundleswarn" },
+		{ "rotor_rymill", 2, "rotor_glasswarn" },
     }
 
 
