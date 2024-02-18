@@ -779,99 +779,66 @@ T.Exterior.TextureSets = {
 
 }
 
-local TEXTURE_UPDATE_DATA_IDS = {
-    ["power-state"] = true, 
-    ["health-warning"] = true,
-    ["teleport"] = true,
-    ["vortex"] = true,
-    ["flight"] = true,
-
-}
-
 T.CustomHooks = {
-    travel_textures = {
-        exthooks = {
-            ["DataChanged"] = true,
-        },
-        func = function(ext, int, data_id, data_value)
-            if not TEXTURE_UPDATE_DATA_IDS[data_id] then return end
+	power_textureset_update = {
+		inthooks = {
+			["PowerToggled"] = true,
+			["HealthWarningToggled"] = true,
+
+		},
+		func = function(ext, int)
+
+
+			local power = int:GetData("power-state")
+            local warning = int:GetData("health-warning", false)
             local flight = ext:GetData("flight")
             local teleport = ext:GetData("teleport")
             local vortex = ext:GetData("vortex")
-            local power = ext:GetData("power-state")
-            local warning = int:GetData("health-warning", false)
 			local active = flight or teleport or vortex
-
-			local selected = "off"
-
-			if warning and not power then
-				selected = "warning_off"
-			elseif not power then
-				selected = "off"
-			elseif warning and active then
-				selected = "warning_flight"
-			elseif warning then
-				selected = "warning"
-			elseif active then
-				selected = "flight"
-			end
-
-			int:ApplyTextureSet(selected)
-            ext:ApplyTextureSet(selected)
-		end
-
-    },
-
-	-- PowerToggled is a table that contains a function to handle power state changes in the rymill_interior.
-	-- This function is responsible for applying texture sets based on the power state and health warning of the interior.
-	-- If the power is on and there is a health warning, it applies the "warning" texture set.
-	-- If the power is on and there is no health warning, it applies a sequence of texture sets ("normalseq1", "normalseq2", "normalseq3", "normal") with a delay between each.
-	-- If the power is off, it applies the "off" texture set.
-	PowerToggled = {
-        exthooks = {
-            ["DataChanged"] = true,
-        },
-        func = function(ext,int, data_id, data_value)
-
-			if data_id == "power-state" then
-				local power = data_value
-				local warning = int:GetData("health-warning", false)
-
-				if power then
-					if warning then
-							int:ApplyTextureSet("warning")
-					else
-						timer.Simple( 1, function()
-							int:ApplyTextureSet("normalseq1")
-						 end)
-						timer.Simple( 2, function()
-							int:ApplyTextureSet("normalseq2")
-						end)
-						timer.Simple( 3, function()
-							int:ApplyTextureSet("normalseq3")
-						end)
-						timer.Simple( 4, function()
-							int:ApplyTextureSet("normal")
-						end)
-					end
-					
+			
+			if power then
+				if warning and active then
+					int:ApplyTextureSet("warning_flight")
+				elseif warning then
+					int:ApplyTextureSet("warning")
 				else 
-					if not power then return end
+					timer.Simple( 1, function()
+						int:ApplyTextureSet("normalseq1")
+					end)
+					timer.Simple( 2, function()
+						int:ApplyTextureSet("normalseq2")
+					end)
+					timer.Simple( 3, function()
+						int:ApplyTextureSet("normalseq3")
+					end)
+					timer.Simple( 4, function()
+						int:ApplyTextureSet("normal")
+					end)
+				end
+			elseif not power then
+				if warning then
+					int:ApplyTextureSet("warning-off")
+				else
 					int:ApplyTextureSet("off")
 				end
-			end	
+			end
+			
+			
+		end
+	}
+}
+T.Interior.CustomHooks = {
+	interior_initialise = {
+		"PostInitialize",
+		function(int)
+			-- int:SetData("power-state", true)
+			-- int:ApplyTextureSet("off")
+			int:ApplyTextureSet("additional_textures")
 		end
 	},
-}
-
-T.Interior.CustomHooks = {
-    additional_textures = {
-        "PostInitialize",
-        function(int)
-            int:ApplyTextureSet("additional_textures")
-        end,
-    },
 
 }
+
+
 
 
