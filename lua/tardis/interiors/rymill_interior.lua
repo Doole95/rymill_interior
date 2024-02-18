@@ -684,6 +684,7 @@ T.Interior.TextureSets = {
 		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlighton" },
 		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlighton" },
 		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlighton" },
+		{ "rymill_floordownlights",0, "floordownlights" },
     },
 	["normalseq1"] = {
         prefix = "models/dalliias/rymill/",
@@ -753,6 +754,7 @@ T.Interior.TextureSets = {
 		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlight" },
 		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlight" },
 		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlight" },
+		{ "rymill_floordownlights",0, "floordownlightsoff" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",

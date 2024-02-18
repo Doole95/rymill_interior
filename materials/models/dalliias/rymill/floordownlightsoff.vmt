@@ -1,0 +1,17 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\floordownlightsoff"
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\floordownlightsoff"
+	"$color2" "[0.8 0.8 0.8]"
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmaptint" "[0.5 0.5 0.5]"
+	"$additive" 1
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "0"
+}
