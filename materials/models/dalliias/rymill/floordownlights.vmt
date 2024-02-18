@@ -3,7 +3,7 @@
 	"$basetexture" "models\dalliias\rymill\floordownlights"
 	"$selfillum" "1"
 	"$selfillummask" "models\dalliias\rymill\floordownlights"
-	"$color2" "[0.8 0.8 0.8]"
+	"$color2" "[0.8 0.85 1]"
 	"$surfaceprop" "concrete"
 
 	"$envmap" "models/dalliias/whittagann/RoughENV"
