@@ -17,7 +17,7 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
 	Interior = {
 
         LightOverride = {
-            basebrightness = 1,
+            basebrightness = 0.1,
             nopowerbrightness = 0.001
         },
 
