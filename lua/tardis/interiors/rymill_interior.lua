@@ -419,7 +419,7 @@ T.Interior={
 		pillars_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
 		ceiling_rotor_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
 		ceiling_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
-        rymill_vol_light = {pos=Vector(0,5,120), ang=Angle(0,0,0)},	
+        rymill_vol_light = {pos=Vector(0,5,300), ang=Angle(0,0,0)},	
         floor_glass_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         corridordoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         internaldoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
@@ -671,6 +671,8 @@ T.Interior.TextureSets = {
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
 		{ "rotor_rymill", 2, "rotor_glass" },
+		{ "rotor_rymill", 2, "rotor_glass" },
+		{ "rymill_vol_light", "vol_lightmask02on" },
     },
 	["normalseq1"] = {
         prefix = "models/dalliias/rymill/",
@@ -734,6 +736,7 @@ T.Interior.TextureSets = {
 		{ "rymill_powercontrol", 2, "controls_red" },
 		{ "rymill_faultlocator", 5, "downlight_lampoff" },
 		{ "rotor_rymill", 2, "rotor_glassoff" },
+		{ "rymill_vol_light", "vol_lightmask02" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",
@@ -770,6 +773,11 @@ T.Interior.TextureSets = {
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightswarn" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundleswarn" },
 		{ "rotor_rymill", 2, "rotor_glasswarn" },
+    },
+	["additional_textures"] = {
+        prefix = "models/dalliias/rymill/",
+        { "rymill_vol_light", "vol_lightmask02" },
+
     }
 
 
@@ -785,6 +793,17 @@ T.Exterior.TextureSets = {
     }
 
 }
+
+T.Interior.CustomHooks = {
+
+    additional_textures = {
+        "PostInitialize",
+        function(int)
+            int:ApplyTextureSet("additional_textures")
+        end,
+    }
+
+} 
 
 
 T.CustomHooks = {
@@ -871,6 +890,8 @@ T.CustomHooks = {
 		end
 	},
 }
+
+
 
 T.CustomSettings = {
     interior_lights = {

@@ -155,7 +155,7 @@ TARDIS:AddPart(PART)
 local PART = {}
 PART.ID = "rymill_vol_light"
 PART.Name = "Rymill Volumetric Light 1"
-PART.Model = "models/effects/vol_light128x256.mdl"
+PART.Model = "models/effects/vol_light256x512.mdl"
 PART.AutoSetup = true
 PART.UseTransparencyFix = true
 
