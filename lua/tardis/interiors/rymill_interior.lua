@@ -802,6 +802,10 @@ T.CustomHooks = {
 				elseif warning then
 					int:ApplyTextureSet("warning")
 				else 
+
+					// TODO: Research a way to dispose of the timers when they are not needed, 
+					// for instance when a player stops or starts the tardis during the timer sequence.
+
 					timer.Simple( 1, function()
 						int:ApplyTextureSet("normalseq1")
 					end)
@@ -821,23 +825,22 @@ T.CustomHooks = {
 				else
 					int:ApplyTextureSet("off")
 				end
+
+				//TODO: Remove parts that are not available when powerered off or damaged.  
+
 			end
 			
 			
 		end
-	}
-}
-T.Interior.CustomHooks = {
+	},
 	interior_initialise = {
 		"PostInitialize",
 		function(int)
-			-- int:SetData("power-state", true)
-			-- int:ApplyTextureSet("off")
 			int:ApplyTextureSet("additional_textures")
 		end
 	},
-
 }
+
 
 
 
