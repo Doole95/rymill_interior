@@ -1,0 +1,31 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\walls_roundles_Emissive_inflightwhite"
+
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\walls_roundles_Emissive_inflightwhite"
+	"&color2" "[1 1 1]"
+	"$surfaceprop" "glass"
+
+	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmaptint" "[0.5 0.5 0.5]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "0"
+
+
+	
+	"Proxies"
+	{
+	"AnimatedTexture"
+	{
+	"animatedTextureVar" "$basetexture"
+	"animatedTextureVar" "$selfillummask"
+	"animatedTextureFrameNumVar" "$frame"
+	"animatedTextureFrameRate" "24"
+	}
+	}
+}

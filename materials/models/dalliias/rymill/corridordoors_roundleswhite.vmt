@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymill\corridordoors_roundles_Emissivewhite"
+	"$additive" 0
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymill\corridordoors_roundles_Emissivewhite"
+
+	"$surfaceprop" "concrete"
+
+	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmaptint" "[1 1 1]"
+
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "0"
+}

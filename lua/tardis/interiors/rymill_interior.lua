@@ -419,7 +419,12 @@ T.Interior={
 		pillars_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
 		ceiling_rotor_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
 		ceiling_rymill	= 	{ pos = Vector(0,0,0),	ang = Angle(0,0,0),		},
-        --rymill_vol_light = {pos=Vector(0,5,120), ang=Angle(0,0,0)},	
+        rymill_vol_light = {pos=Vector(0,5,300), ang=Angle(0,0,0)},
+		rymill_vol_lightdownlight1 = {pos = Vector(61.753, 342.924, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight2 = {pos = Vector(110.861, 314.47, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight3 = {pos = Vector(160.073, 285.975, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight4 = {pos = Vector(209.665, 256.63, 150),  ang = Angle(0, 35.455, 0)},		
+		rymill_vol_lightdownlight5 = {pos = Vector(258.026, 228.946, 150),  ang = Angle(0, 35.455, 0)},		
         floor_glass_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         corridordoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
         internaldoors_rymill = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
@@ -436,6 +441,7 @@ T.Interior={
 		rymill_faultlocatorglass = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_glassfloormetal = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 		rymill_rymillchair = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
+		rymill_floordownlights = {pos=Vector(0,0,0), ang=Angle(0,0,0)},
 
 		-- Controls
 		--PANEL1
@@ -671,6 +677,14 @@ T.Interior.TextureSets = {
 		{ "rymill_powercontrol", 2, "controls_green" },
 		{ "rymill_faultlocator", 5, "downlight_lamp" },
 		{ "rotor_rymill", 2, "rotor_glass" },
+		{ "rotor_rymill", 2, "rotor_glass" },
+		{ "rymill_vol_light", "vol_lightmask02on" },
+		{ "rymill_vol_lightdownlight1", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight2", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlighton" },
+		{ "rymill_floordownlights",0, "floordownlights" },
     },
 	["normalseq1"] = {
         prefix = "models/dalliias/rymill/",
@@ -734,6 +748,13 @@ T.Interior.TextureSets = {
 		{ "rymill_powercontrol", 2, "controls_red" },
 		{ "rymill_faultlocator", 5, "downlight_lampoff" },
 		{ "rotor_rymill", 2, "rotor_glassoff" },
+		{ "rymill_vol_light", "vol_lightmask02" },
+		{ "rymill_vol_lightdownlight1", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight2", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlight" },
+		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlight" },
+		{ "rymill_floordownlights",0, "floordownlightsoff" },
     },
     ["warning"] = {
         prefix = "models/dalliias/rymill/",
@@ -770,6 +791,16 @@ T.Interior.TextureSets = {
 		{ "ceiling_rotor_rymill", 1, "ceiling_rotor_lightswarn" },
 		{ "corridordoors_rymill", 1, "corridordoors_roundleswarn" },
 		{ "rotor_rymill", 2, "rotor_glasswarn" },
+    },
+	["additional_textures"] = {
+        prefix = "models/dalliias/rymill/",
+        { "rymill_vol_light", "vol_lightmask02on" },
+		{ "rymill_vol_lightdownlight1", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight2", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight3", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight4", "vol_lightmaskdownlighton" },
+		{ "rymill_vol_lightdownlight5", "vol_lightmaskdownlighton" },
+
     }
 
 
@@ -786,88 +817,171 @@ T.Exterior.TextureSets = {
 
 }
 
+T.Interior.CustomHooks = {
+
+    additional_textures = {
+        "PostInitialize",
+        function(int)
+            int:ApplyTextureSet("additional_textures")
+        end,
+    }
+
+} 
+
 
 T.CustomHooks = {
-	power_textureset_update = {
+	interior_initialise = {
+		"PostInitialize",
+		function(int, ext)
+			int:ApplyTextureSet("additional_textures")
+			-- int:ApplyTextureSet("normal")
+			ext:ApplyTextureSet("normal")
+		end
+	},
+	interior_power_textureset_update = {
 		inthooks = {
 			["PowerToggled"] = true,
 			["HealthWarningToggled"] = true,
-			["FlightToggled"] = true,
-			-- ["VortexToggled"] = true,
 
 		},
 		func = function(ext, int)
-
+			
 			local power = int:GetData("power-state")
             local warning = int:GetData("health-warning", false)
-            local flight = ext:GetData("flight")
-            local teleport = ext:GetData("teleport")
-            local vortex = ext:GetData("vortex")
+            local flight = int:GetData("flight")
+            local teleport = int:GetData("teleport")
+            local vortex = int:GetData("vortex")
 			local active = flight or teleport or vortex
 
-			ext:ApplyTextureSet("normal")
-			
 			if power then
-				if warning and active then
-					int:ApplyTextureSet("warning_flight")
-					ext:ApplyTextureSet("flight")
-				elseif active then
-					ext:ApplyTextureSet("flight")
-				elseif warning then
-					int:ApplyTextureSet("warning")
-				else 
-
-					// TODO: Research a way to dispose of the timers when they are not needed, 
-					// for instance when a player stops or starts the tardis during the timer sequence.
-
-					timer.Simple( 1, function()
-						int:ApplyTextureSet("normalseq1")
-					end)
-					timer.Simple( 2, function()
-						int:ApplyTextureSet("normalseq2")
-					end)
-					timer.Simple( 3, function()
-						int:ApplyTextureSet("normalseq3")
-					end)
-					timer.Simple( 4, function()
-						int:ApplyTextureSet("normal")
-					end)
-				end
-			elseif not power then
+			
 				if warning then
-					int:ApplyTextureSet("warning-off")
+					if active then
+						int:ApplyTextureSet("warning_flight")
+					else
+						int:ApplyTextureSet("warning")
+					end
 				else
-					int:ApplyTextureSet("off")
+					if active then
+						timer.Simple( 1, function()
+							int:ApplyTextureSet("normalseq1")
+						end)
+						timer.Simple( 2, function()
+							int:ApplyTextureSet("normalseq2")
+						end)
+						timer.Simple( 3, function()
+							int:ApplyTextureSet("normalseq3")
+						end)
+						timer.Simple( 4, function()
+							int:ApplyTextureSet("flight")
+						end)
+					else
+						timer.Simple( 1, function()
+							int:ApplyTextureSet("normalseq1")
+						end)
+						timer.Simple( 2, function()
+							int:ApplyTextureSet("normalseq2")
+						end)
+						timer.Simple( 3, function()
+							int:ApplyTextureSet("normalseq3")
+						end)
+						timer.Simple( 4, function()
+							int:ApplyTextureSet("normal")
+						end)
+					end
 				end
-
-				//TODO: Remove parts that are not available when powerered off or damaged.  
-
+			else
+				if warning then
+					if active then
+						int:ApplyTextureSet("warning-flight")
+					else
+						int:ApplyTextureSet("warning-off")
+					end
+				else
+					if active then
+						int:ApplyTextureSet("flight")
+					else
+						int:ApplyTextureSet("off")
+					end
+				end
+			
 			end
-			
-			
 		end
 	},
-	teleport_textureset_update = {
-		exthooks = {
-			["TeleportToggled"] = true,
+	interior_flight_textureset_update = {
+		inthooks = {
+			["FlightToggled"] = true,
+
 		},
 		func = function(ext, int)
-			local teleport = ext:GetData("teleport")
-			if teleport then
+			local power = int:GetData("power-state")
+			local warning = int:GetData("health-warning", false)
+			local flight = ext:GetData("flight")
+
+			if active then
+				if power then
+					if warning then
+						int:ApplyTextureSet("warning-flight")
+					else
+						int:ApplyTextureSet("flight")
+					end
+				else 
+					if warning then
+						int:ApplyTextureSet("warning-off")
+					else
+						int:ApplyTextureSet("off")
+					end
+				end
+			end 
+		end
+	},
+	exterior_vortex_textureset_update = {
+		exthooks = {
+			["VortexToggled"] = true,
+		},
+		func = function(ext, int)
+            local vortex = ext:GetData("vortex")
+
+			if vortex then
 				ext:ApplyTextureSet("vortex")
-			else
+			else 
 				ext:ApplyTextureSet("normal")
 			end
 		end
 	},
-	interior_initialise = {
-		"PostInitialize",
-		function(int)
-			int:ApplyTextureSet("additional_textures")
-		end
-	},
 }
 
+
+
+T.CustomSettings = {
+    interior_lights = {
+        text = "Light",
+        value_type = "list",
+        value = "ldefault",
+        options = {
+            ["ldefault"] = "Blue Interior",
+            ["lwhite"] = "Daylit Interior",
+        }
+    },
+}
+
+T.Templates = {
+	rymill_ldefault = {
+		override = true,
+        condition = function(id, ply, ent)
+            local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+            return (setting_val == "ldefault")
+        end,
+	},
+	rymill_lwhite = {
+		override = true,
+        condition = function(id, ply, ent)
+            local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+            return (setting_val == "lwhite")
+        end,
+	},
+}
+TARDIS:AddInterior(T)
 
 
 
