@@ -106,6 +106,8 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
             { "rymill_vol_lightdownlight3", "vol_lightmaskdownlighton" },
             { "rymill_vol_lightdownlight4", "vol_lightmaskdownlighton" },
             { "rymill_vol_lightdownlight5", "vol_lightmaskdownlighton" },
+            { "corridordoors_rymill", 1, "corridordoors_roundleswhite" },
+            { "door", 1, "corridordoors_roundleswhite" },
     
         }
     
