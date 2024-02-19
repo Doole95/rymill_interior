@@ -830,125 +830,74 @@ T.Interior.CustomHooks = {
 
 
 T.CustomHooks = {
-	interior_initialise = {
-		"PostInitialize",
-		function(int, ext)
-			int:ApplyTextureSet("additional_textures")
-			-- int:ApplyTextureSet("normal")
-			ext:ApplyTextureSet("normal")
-		end
-	},
-	interior_power_textureset_update = {
-		inthooks = {
-			["PowerToggled"] = true,
-			["HealthWarningToggled"] = true,
+    interior_initialize = {
+        "PostInitialize",
+        function(int, ext)
+            -- int:ApplyTextureSet("additional_textures")  
+            ext:ApplyTextureSet("normal") 
+        end
+    },
 
-		},
-		func = function(ext, int)
-			
-			local power = int:GetData("power-state")
+    interior_power_textureset_update = { 
+        inthooks = {
+            ["PowerToggled"] = true,
+            ["HealthWarningToggled"] = true,
+        },
+        func = function(ext, int)
+
+            local power = int:GetData("power-state")
             local warning = int:GetData("health-warning", false)
-            local flight = int:GetData("flight")
-            local teleport = int:GetData("teleport")
-            local vortex = int:GetData("vortex")
-			local active = flight or teleport or vortex
+            local active = int:GetData("flight") or int:GetData("teleport") or int:GetData("vortex")
 
-			if power then
-			
-				if warning then
-					if active then
-						int:ApplyTextureSet("warning_flight")
-					else
-						int:ApplyTextureSet("warning")
-					end
-				else
-					if active then
-						timer.Simple( 1, function()
-							int:ApplyTextureSet("normalseq1")
-						end)
-						timer.Simple( 2, function()
-							int:ApplyTextureSet("normalseq2")
-						end)
-						timer.Simple( 3, function()
-							int:ApplyTextureSet("normalseq3")
-						end)
-						timer.Simple( 4, function()
-							int:ApplyTextureSet("flight")
-						end)
-					else
-						timer.Simple( 1, function()
-							int:ApplyTextureSet("normalseq1")
-						end)
-						timer.Simple( 2, function()
-							int:ApplyTextureSet("normalseq2")
-						end)
-						timer.Simple( 3, function()
-							int:ApplyTextureSet("normalseq3")
-						end)
-						timer.Simple( 4, function()
-							int:ApplyTextureSet("normal")
-						end)
-					end
-				end
-			else
-				if warning then
-					if active then
-						int:ApplyTextureSet("warning-flight")
-					else
-						int:ApplyTextureSet("warning-off")
-					end
-				else
-					if active then
-						int:ApplyTextureSet("flight")
-					else
-						int:ApplyTextureSet("off")
-					end
-				end
-			
-			end
-		end
-	},
+            if power then
+                if warning then
+                    int:ApplyTextureSet(active and "warning_flight" or "warning")
+                elseif active then
+                    int:ApplyTextureSet("flight");
+                else 
+					timer.Simple(1, function() int:ApplyTextureSet("normalseq1") end)
+                    timer.Simple(2, function() int:ApplyTextureSet("normalseq2") end)
+                    timer.Simple(3, function() int:ApplyTextureSet("normalseq3") end)
+					timer.Simple(4, function() int:ApplyTextureSet("normal") end)
+                end
+            else 
+                int:ApplyTextureSet(warning and "warning-off" or "off")
+            end
+        end
+    },
 	interior_flight_textureset_update = {
 		inthooks = {
 			["FlightToggled"] = true,
-
 		},
 		func = function(ext, int)
 			local power = int:GetData("power-state")
 			local warning = int:GetData("health-warning", false)
-			local flight = ext:GetData("flight")
-
+			local active = ext:GetData("flight")
 			if active then
 				if power then
-					if warning then
-						int:ApplyTextureSet("warning-flight")
-					else
-						int:ApplyTextureSet("flight")
-					end
-				else 
-					if warning then
-						int:ApplyTextureSet("warning-off")
-					else
-						int:ApplyTextureSet("off")
-					end
+					int:ApplyTextureSet(warning and "warning-flight" or "flight")
+				else	
+					int:ApplyTextureSet(warning and "warning-off" or "off")
+				end 
+			else
+				if power then
+					print("not active power on")
+					int:ApplyTextureSet(warning and "warning" or "normal")
+				else
+					int:ApplyTextureSet(warning and "warning-off" or "off")
 				end
-			end 
-		end
-	},
-	exterior_vortex_textureset_update = {
-		exthooks = {
-			["VortexToggled"] = true,
-		},
-		func = function(ext, int)
-            local vortex = ext:GetData("vortex")
-
-			if vortex then
-				ext:ApplyTextureSet("vortex")
-			else 
-				ext:ApplyTextureSet("normal")
 			end
+
 		end
 	},
+    exterior_vortex_textureset_update = {
+        exthooks = {
+            ["VortexToggled"] = true,
+        },
+        func = function(ext, int)
+            ext:ApplyTextureSet(ext:GetData("vortex") and "vortex" or "normal") 
+        end
+    },
 }
 
 
