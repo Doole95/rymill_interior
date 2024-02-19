@@ -96,6 +96,13 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
             { "self", 14, "sequencelightson" },
             { "self", 1, "walls_roundles_inflightwhite" },
         },
+
+        ["additional_textures"] = {
+            prefix = "models/dalliias/rymill/",
+            { "rymill_vol_light", "vol_lightmask02on" },
+            { "self", 1, "walls_roundleswhite" },
+    
+        }
     
     }
     
