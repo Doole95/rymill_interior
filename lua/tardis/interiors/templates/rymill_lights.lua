@@ -68,12 +68,12 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
             },
             room_lamp7 = {
                 color = Color(255, 255, 255),
-                brightness = 0.5, 
+                brightness = 0.2, 
             },
             
             room_lamp8 = {
                 color = Color(255, 255, 255),
-                brightness = 3,
+                brightness = 2,
             },
         
     
