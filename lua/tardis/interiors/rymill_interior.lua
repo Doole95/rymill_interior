@@ -963,6 +963,15 @@ T.CustomSettings = {
             ["lwhite"] = "Daylit Interior",
         }
     },
+    interior_rotor = {
+        text = "Rotor",
+        value_type = "list",
+        value = "rdefault",
+        options = {
+            ["rdefault"] = "Full Rotor",
+            ["rsmall"] = "Small Rotor",
+        }
+    },
 }
 
 T.Templates = {
@@ -979,6 +988,22 @@ T.Templates = {
             local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
             return (setting_val == "lwhite")
         end,
+	},
+
+	-- Rotor Type
+	rymill_rdefault = {
+		override = true,
+		condition = function(id, ply, ent)
+			local setting_val = TARDIS:GetCustomSetting(id, "interior_rotor", ply)
+			return (setting_val == "rdefault")
+		end,
+	},
+	rymill_rsmall = {
+		override = true,
+		condition = function(id, ply, ent)
+			local setting_val = TARDIS:GetCustomSetting(id, "interior_rotor", ply)
+			return (setting_val == "rsmall")
+		end,
 	},
 }
 TARDIS:AddInterior(T)

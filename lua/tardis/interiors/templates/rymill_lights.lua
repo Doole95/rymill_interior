@@ -68,12 +68,12 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
             },
             room_lamp7 = {
                 color = Color(255, 255, 255),
-                brightness = 0.5, 
+                brightness = 0.2, 
             },
             
             room_lamp8 = {
                 color = Color(255, 255, 255),
-                brightness = 3,
+                brightness = 2,
             },
         
     
@@ -96,6 +96,13 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
             { "self", 14, "sequencelightson" },
             { "self", 1, "walls_roundles_inflightwhite" },
         },
+
+        ["additional_textures"] = {
+            prefix = "models/dalliias/rymill/",
+            { "rymill_vol_light", "vol_lightmask02on" },
+            { "self", 1, "walls_roundleswhite" },
+    
+        }
     
     }
     

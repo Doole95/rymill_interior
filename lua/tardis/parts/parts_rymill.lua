@@ -45,6 +45,16 @@ PART.UseTransparencyFix = true
 TARDIS:AddPart(PART)
 
 local PART={}
+PART.ID = "floor_glass_rymill2"
+PART.Name = "floor_glass2"
+PART.Model = "models/dalliias/whittagann/floor_glass2.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+TARDIS:AddPart(PART)
+
+local PART={}
 PART.ID = "internaldoors_rymill"
 PART.Name = "internaldoors"
 PART.Model = "models/dalliias/whittagann/internaldoors.mdl"
@@ -241,6 +251,36 @@ local PART={}
 PART.ID = "rotor_rymill"
 PART.Name = "Rymill Rotor"
 PART.Model = "models/dalliias/whittagann/timerotor.mdl"
+PART.AutoSetup = true
+PART.Collision = true
+PART.UseTransparencyFix = true
+
+if CLIENT then
+	function PART:Initialize()
+	self.timerotor={}
+	self.timerotor.pos=0
+	self.timerotor.mode=1
+	end
+
+	function PART:Think()
+		local ext=self.exterior
+		if ext:GetData("flight") or ext:GetData("teleport") or ext:GetData("vortex") then
+			if self.timerotor.pos==1 then
+				self.timerotor.pos=0
+			end
+				
+			self.timerotor.pos=math.Approach( self.timerotor.pos, self.timerotor.mode, FrameTime()*0.3 )
+			self:SetPoseParameter( "switch", self.timerotor.pos )
+		end
+	end
+end
+
+TARDIS:AddPart(PART)
+
+local PART={}
+PART.ID = "rotor2_rymill"
+PART.Name = "Rymill Rotor2"
+PART.Model = "models/dalliias/whittagann/timerotoroption1.mdl"
 PART.AutoSetup = true
 PART.Collision = true
 PART.UseTransparencyFix = true
