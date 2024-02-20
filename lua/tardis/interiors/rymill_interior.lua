@@ -961,6 +961,7 @@ T.CustomSettings = {
         options = {
             ["ldefault"] = "Blue Interior",
             ["lwhite"] = "Daylit Interior",
+			["lblue"] = "Daylit Blue Roundles Interior",
         }
     },
     interior_rotor = {
@@ -972,39 +973,71 @@ T.CustomSettings = {
             ["rsmall"] = "Small Rotor",
         }
     },
+    interior_volumes = {
+        text = "Volumes",
+        value_type = "list",
+        value = "volon",
+        options = {
+            ["volon"] = "Light Volumes On",
+            ["voloff"] = "Light Volumes Off",
+        }
+    },
+	
 }
 
 T.Templates = {
-	rymill_ldefault = {
-		override = true,
-        condition = function(id, ply, ent)
-            local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
-            return (setting_val == "ldefault")
-        end,
-	},
-	rymill_lwhite = {
-		override = true,
-        condition = function(id, ply, ent)
-            local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
-            return (setting_val == "lwhite")
-        end,
-	},
+		rymill_ldefault = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+				return (setting_val == "ldefault")
+			end,
+		},
+		rymill_lwhite = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+				return (setting_val == "lwhite")
+			end,
+		},
+		rymill_lblue = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_lights", ply)
+				return (setting_val == "lblue")
+			end,
+		},
 
-	-- Rotor Type
-	rymill_rdefault = {
-		override = true,
-		condition = function(id, ply, ent)
-			local setting_val = TARDIS:GetCustomSetting(id, "interior_rotor", ply)
-			return (setting_val == "rdefault")
-		end,
-	},
-	rymill_rsmall = {
-		override = true,
-		condition = function(id, ply, ent)
-			local setting_val = TARDIS:GetCustomSetting(id, "interior_rotor", ply)
-			return (setting_val == "rsmall")
-		end,
-	},
+		-- Rotor Type
+		rymill_rdefault = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_rotor", ply)
+				return (setting_val == "rdefault")
+			end,
+		},
+		rymill_rsmall = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_rotor", ply)
+				return (setting_val == "rsmall")
+			end,
+		},
+		-- Volumes options
+		rymill_volon = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_volumes", ply)
+				return (setting_val == "volon")
+			end,
+		},
+		rymill_voloff = {
+			override = true,
+			condition = function(id, ply, ent)
+				local setting_val = TARDIS:GetCustomSetting(id, "interior_volumes", ply)
+				return (setting_val == "voloff")
+			end,
+		},
 }
 TARDIS:AddInterior(T)
 

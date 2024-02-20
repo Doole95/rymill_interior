@@ -116,6 +116,109 @@ TARDIS:AddInteriorTemplate("rymill_lwhite", {
 	}
 
 
+
+
+    
+})
+
+TARDIS:AddInteriorTemplate("rymill_lblue", {
+	Interior = {
+
+        LightOverride = {
+            basebrightness = 0.1,
+            nopowerbrightness = 0.001
+        },
+
+        Lights = {
+
+            {color = 
+                Color(255, 255, 255),  
+                brightness = 0.2, 
+            },
+                
+            {color = 
+            Color(255, 255, 255),  
+                brightness = 0.2, 
+            },
+    
+    
+        },
+
+		Lamps = {
+            room_lamp1 = {
+                color = Color(255, 255, 255),
+                brightness = 2,
+            },
+    
+            room_lamp2 = {
+                color = Color(255, 255, 255),
+                brightness = 2,
+            },
+    
+            room_lamp3 = {
+                color = Color(255, 255, 255),
+                brightness = 2,
+            },
+    
+            room_lamp4 = {
+                color = Color(255, 255, 255),
+                brightness = 2,
+            },
+    
+            room_lamp5 = {
+                color = Color(255, 255, 255),
+                brightness = 2,
+                },
+    
+            room_lamp6 = {
+                color = Color(252, 252, 252),
+                brightness = 2,  
+            },
+            room_lamp7 = {
+                color = Color(255, 255, 255),
+                brightness = 0.2, 
+            },
+            
+            room_lamp8 = {
+                color = Color(255, 255, 255),
+                brightness = 2,
+            },
+        
+    
+    },
+
+
+    TextureSets = {
+        ["normal"] = {
+            prefix = "models/dalliias/rymill/",
+            { "self", 1, "walls_roundles" },
+            { "corridordoors_rymill", 1, "corridordoors_roundles" },
+        },
+        ["normalseq3"] = {
+            prefix = "models/dalliias/rymill/",
+            { "self", 1, "walls_roundles" },
+            { "corridordoors_rymill", 1, "corridordoors_roundles" },
+        },
+        ["flight"] = {
+            prefix = "models/dalliias/rymill/",
+            { "self", 14, "sequencelightson" },
+            { "self", 1, "walls_roundles_inflight" },
+        },
+
+        ["additional_textures"] = {
+            prefix = "models/dalliias/rymill/",
+            { "rymill_vol_light", "vol_lightmask02on" },
+            { "self", 1, "walls_roundles" },
+    
+        }
+    
+    }
+    
+	}
+
+    
+
+
     
 })
 
