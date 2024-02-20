@@ -7,7 +7,7 @@
 
 	"$surfaceprop" "concrete"
 
-	"$envmap" "models/dalliias/whittagann/RoughENV"
+	"$envmap" "models/dalliias/whittagann/Rough_ENV"
 	"$envmaptint" "[1 1 1]"
 
 	"$nodecal" "0"
