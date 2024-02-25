@@ -533,7 +533,7 @@ T.Interior={
 
 
 		door = {
-			model = "models/dalliias/whittagann/exterior/doorsint.mdl",
+			model = "models/dalliias/whittagann/exterior/doorsext.mdl", 
 			posoffset = Vector(27,0,-49),
 			angoffset = Angle(0, 180, 0),AnimateSpeed = 0.2
 		},
@@ -553,7 +553,7 @@ T.Interior={
 	ExitDistance=6500,
 }
 T.Exterior={
-	Model="models/dalliias/whittagann/exterior/exterior_c.mdl",
+	Model="models/dalliias/whittagann/exterior/rymill_ext.mdl",
 	--ExcludedSkins = {},
 	Mass=2000,
 	Portal = {
