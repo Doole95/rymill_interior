@@ -31,7 +31,7 @@ T.Interior={
             model = "models/dalliias/whittagann/internaldoors.mdl", 
         },
 		door={
-			model="models/dalliias/whittagann/exterior/doorsint.mdl",posoffset=Vector(27,0,-49),angoffset=Angle(0,180,0)
+			model="models/dalliias/whittagann/exterior/doorsext.mdl",posoffset=Vector(27,0,-49),angoffset=Angle(0,180,0)
 		},
 
         internaldoors_rymill = false,
