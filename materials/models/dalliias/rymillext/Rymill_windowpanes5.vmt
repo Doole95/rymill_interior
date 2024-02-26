@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models\dalliias\rymillext\Rymill_windowpanes_Base_color"
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymillext\Rymill_windowpanes_Emissive"
+	"$envmap" "models/dalliias/whittagann/environment"
+	"$color2" "[0.9 0.3 0.3]"
+	"$envmaptint" "[1 1 1]"
+	"$surfaceprop" "concrete"
+	"$nodecal" "0"
+    "$rimlight"    "1"
+    "$rimlightexponent""2"
+    "$rimlightboost"    "1"
+    "$nocull" "0"
+}

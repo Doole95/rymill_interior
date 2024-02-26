@@ -557,10 +557,10 @@ T.Exterior={
 	--ExcludedSkins = {},
 	Mass=2000,
 	Portal = {
-		pos = Vector(28.013013839722, -0.01, 48.6904296875),
+		pos = Vector(28.8, -0.01, 48.6904296875),
 		ang = Angle(0,0,0),
-		width = 41.05,
-		height = 90,
+		width = 43,
+		height = 91.86,
 		thickness = 33,
 		inverted = true, 
 	},
@@ -619,7 +619,7 @@ T.Exterior={
 	Parts = {
 		door = {
 			model = "models/dalliias/whittagann/exterior/doorsext.mdl",
-			posoffset=Vector(-28.013013839722,00,-48.6904296875),
+			posoffset=Vector(-28.9,0.1,-48.6904296875),
 			angoffset = Angle(0,0,0),AnimateSpeed = 0.2
 		},
 		vortex = {
