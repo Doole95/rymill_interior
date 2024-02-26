@@ -1,13 +1,12 @@
 "VertexlitGeneric"
 {
 	"$basetexture" "models\dalliias\rymillext\Rymill_windowpanes_Base_color"
-	"$bumpmap" "models\dalliias\rymillext\Rymill_windowpanes_Normal"
-	"$normalmap" "models\dalliias\rymillext\Rymill_windowpanes_Roughness"
-	"$surfaceprop" "concrete"
-
+	"$selfillum" "1"
+	"$selfillummask" "models\dalliias\rymillext\Rymill_windowpanes_Emissive"
 	"$envmap" "models/dalliias/whittagann/environment"
-	"$envmaptint" "[0.1 0.1 0.1]"
-
+	"$color2" "[1 1 1]"
+	"$envmaptint" "[1 1 1]"
+	"$surfaceprop" "concrete"
 	"$nodecal" "0"
     "$rimlight"    "1"
     "$rimlightexponent""2"
