@@ -1,9 +1,9 @@
 local E = {
-    ID = "whittagann_dal",
+    ID = "rymillext_dal",
     Base = "base",
-    Name = "Whittagann Exterior",
+    Name = "Rymill Exterior",
     Category = "DALLIIAS",
-		Model="models/dalliias/whittagann/exterior/exterior_c.mdl",
+		Model="models/dalliias/whittagann/exterior/rymill_ext.mdl",
 		Mass=2900,
 		ScannerOffset=Vector(30,0,50),
 Portal = {
