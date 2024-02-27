@@ -22,7 +22,7 @@ Portal = {
 	},
 	Light={
 		enabled=true,
-		pos=Vector(0, 0, 116),
+		pos=Vector(0, 0, 105),
 		color=Color(200,155,155)
 	},
 	Sounds={

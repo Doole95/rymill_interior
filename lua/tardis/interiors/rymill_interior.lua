@@ -566,7 +566,7 @@ T.Exterior={
 	},
 	Light={
 		enabled=true,
-		pos=Vector(0,0,120),
+		pos=Vector(0,0,115),
 		color=Color(255,217,179)
 	},
 	ProjectedLight = {
